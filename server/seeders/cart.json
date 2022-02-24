@@ -1,0 +1,14 @@
+[
+    {
+       "item": "shirt",
+       "price": 10.00,
+       "quantity": 1,
+       "size": "Large"
+    },
+    {
+        "item": "pants",
+        "price": 20.00,
+        "quantity": 1,
+        "size": "Large"
+    }
+]
