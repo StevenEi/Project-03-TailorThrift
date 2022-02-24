@@ -7,6 +7,16 @@ const categorySchema = new Schema({
     type: String,
     required: true,
     trim: true
+  },
+  tops: {
+    type: Boolean,
+    required: true,
+    trim: true
+  },
+  bottoms: {
+    type: Boolean,
+    required: true,
+    trim: true
   }
 });
 

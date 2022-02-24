@@ -3,12 +3,29 @@
        "item": "shirt",
        "price": 10.00,
        "quantity": 1,
-       "size": "Large"
+       "size": "large"
     },
     {
-        "item": "pants",
+        "item": "slacks",
         "price": 20.00,
         "quantity": 1,
-        "size": "Large"
+        "size": "large"
+    },
+    {
+        "item": "blazer",
+        "price": 50.00,
+        "quantity": 1,
+        "size": "large"  
+    },
+    {
+        "item": "tie",
+        "price": 10.00,
+        "quantity": 1,
+        "size": "large"
+    },
+    {
+        "accessories": "",
+        "price": 5.00,
+        "quantity": 1
     }
 ]
