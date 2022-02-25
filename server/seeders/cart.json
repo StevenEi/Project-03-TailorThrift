@@ -27,5 +27,11 @@
         "accessories": "",
         "price": 5.00,
         "quantity": 1
+    },
+    {
+        "measurement kit": "",
+        "price": 5.00,
+        "quantity": 1
+
     }
 ]
