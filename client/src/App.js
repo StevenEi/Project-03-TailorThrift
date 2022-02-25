@@ -1,6 +1,8 @@
 import Home from "./pages/Home"
 import Footer from "./components/Footer"
+import Products from "./pages/Products"
 import Header from "./components/Header"
+import Carousel from "./components/Carousel"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Success from './pages/Success';
@@ -48,11 +50,15 @@ function App() {
           <Link to="/">Home</Link>
           <Link to="/login">Login</Link>
           <Link to="/signup">Signup</Link>
+          <Link to="/products">PRODUX</Link>
+          <Link to="/carousel">carousel</Link>
         </nav>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/login" element={<Login />} />
           <Route path="/signup" element={<Signup />} />
+          <Route path="/products" element={<Products />} />
+          <Route path="/carousel" element={<Carousel />} />
           <Route exact path="/success" component={Success} />
           <Route exact path="/orderHistory" component={OrderHistory} />
           <Route exact path="/products/:id" component={Detail} />
