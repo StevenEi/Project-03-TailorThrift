@@ -26,11 +26,11 @@ const userSchema = new Schema({
     minlength: 5
   },
   orders: [{
-    type: Schema.Types.objectId,
+    type: Schema.Types.ObjectId,
     ref: "Order"
   }],
   carts: [{
-    type: Schema.Types.objectId,
+    type: Schema.Types.ObjectId,
     ref: "Cart"
   }]
 });
