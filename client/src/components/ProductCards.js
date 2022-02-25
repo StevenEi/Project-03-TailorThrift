@@ -8,5 +8,3 @@ export default function ProductCards(){
     <div>ProductCards</div>
   )
 }
-
-export default ProductCards
