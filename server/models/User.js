@@ -25,6 +25,22 @@ const userSchema = new Schema({
     required: true,
     minlength: 5
   },
+  chest: {
+    type: String,
+    required: true
+  },
+  arms: {
+    type: String,
+    required: true
+  },
+  waist: {
+    type: String,
+    required: true
+  },
+  inseam: {
+    type: String,
+    required: true
+  },
   orders: [{
     type: Schema.Types.ObjectId,
     ref: "Order"
