@@ -17,7 +17,8 @@ import {
   createHttpLink,
 } from '@apollo/client';
 import { setContext } from '@apollo/client/link/context';
-
+import './assets/css/App.css';
+import Logo from './assets/Logo.png';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -41,32 +42,44 @@ const client = new ApolloClient({
 function App() {
   return (
     <ApolloProvider client={client}>
-    <div className="App">
-    <StoreProvider>
-      <BrowserRouter>
-        <Header />
-        <nav>
-          <h1>Tailor Thrift</h1>
-          <Link to="/">Home</Link>
-          <Link to="/login">Login</Link>
-          <Link to="/signup">Signup</Link>
-          <Link to="/products">PRODUX</Link>
-          <Link to="/carousel">carousel</Link>
-        </nav>
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/login" element={<Login />} />
-          <Route path="/signup" element={<Signup />} />
-          <Route path="/products" element={<Products />} />
-          <Route path="/carousel" element={<Carousel />} />
-          <Route exact path="/success" component={Success} />
-          <Route exact path="/orderHistory" component={OrderHistory} />
-          <Route exact path="/products/:id" component={Detail} />
-        </Routes>
-        <Footer />
-      </BrowserRouter>
-      </StoreProvider>
-    </div>
+      <div className="App">
+        <StoreProvider>
+          <BrowserRouter>
+            <Header />
+            <nav class='header navbar navbar-expand-lg navbar-light bg-light'>
+              <a class="navbar-brand" href="#">
+                <img src={Logo} alt='Logo' class='logo ' />
+              </a>
+              <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                  <li class="nav-item active">
+                    <Link to="/" class='appLink'>Home</Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/login" class='appLink'>Login</Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/signup" class='appLink'>Signup</Link>
+                  </li>
+                  <li class="nav-item">
+                    <Link to="/products" class='appLink'>Products</Link>
+                  </li>
+                </ul>
+              </div>
+            </nav>
+            <Routes>
+              <Route path="/" element={<Home />} />
+              <Route path="/login" element={<Login />} />
+              <Route path="/signup" element={<Signup />} />
+              <Route path="/products" element={<Products />} />
+              <Route exact path="/success" component={Success} />
+              <Route exact path="/orderHistory" component={OrderHistory} />
+              <Route exact path="/products/:id" component={Detail} />
+            </Routes>
+            <Footer />
+          </BrowserRouter>
+        </StoreProvider>
+      </div>
     </ApolloProvider>
   );
 }
