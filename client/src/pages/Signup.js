@@ -16,6 +16,10 @@ function Signup(props) {
         password: formState.password,
         firstName: formState.firstName,
         lastName: formState.lastName,
+        chest: formState.chest,
+        arms: formState.arms,
+        waist: formState.waist,
+        inseam: formState.inseam,
       },
     });
     const token = mutationResponse.data.addUser.token;
@@ -73,6 +77,46 @@ function Signup(props) {
             name="password"
             type="password"
             id="pwd"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="chest">Chest:</label>
+          <input
+            placeholder="e.g. 42in"
+            name="chest"
+            type="chest"
+            id="chest"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="pwd">Arms:</label>
+          <input
+            placeholder="e.g. 42in"
+            name="arms"
+            type="arms"
+            id="arms"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="waist">Waist:</label>
+          <input
+            placeholder="e.g. 32in"
+            name="waist"
+            type="waist"
+            id="waist"
+            onChange={handleChange}
+          />
+        </div>
+        <div className="flex-row space-between my-2">
+          <label htmlFor="legs">Inseam:</label>
+          <input
+            placeholder="e.g. 32in"
+            name="inseam"
+            type="inseam"
+            id="inseam"
             onChange={handleChange}
           />
         </div>
