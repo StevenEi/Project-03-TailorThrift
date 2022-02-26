@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const { Schema } = mongoose;
 
 const categorySchema = new Schema({
-  name: {
+  categoryName: {
     type: String,
     required: true,
     trim: true
@@ -17,7 +17,14 @@ const categorySchema = new Schema({
     type: Boolean,
     required: true,
     trim: true
-  }
+  },
+  categoryId: {
+    type: Number
+  },
+  products: [{
+    type: Schema.Types.ObjectId,
+    ref: "Product"
+  }],
 });
 
 const Category = mongoose.model('Category', categorySchema);
