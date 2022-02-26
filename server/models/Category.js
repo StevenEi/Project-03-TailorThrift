@@ -8,21 +8,6 @@ const categorySchema = new Schema({
     required: true,
     trim: true
   },
-  tops: {
-    type: Boolean,
-    required: true,
-    trim: true
-  },
-  bottoms: {
-    type: Boolean,
-    required: true,
-    trim: true
-  },
-  accessories: {
-    type: Boolean,
-    required: true,
-    trim: true
-  },
   categoryId: {
     type: Number
   },
