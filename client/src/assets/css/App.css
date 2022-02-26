@@ -1,0 +1,21 @@
+:root{
+--darkblue: #003663;
+--dark-grey: #212529;
+}
+
+.logo {
+    height: 25px;
+    padding: 5px;
+    padding-left: 10px;
+}
+
+.header{
+    background-color: lightgrey;
+    color: var(--darkblue);
+    top: 50%
+}
+
+.appLink{
+    color: var(--dark-grey)
+
+}
