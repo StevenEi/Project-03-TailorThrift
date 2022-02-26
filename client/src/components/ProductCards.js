@@ -19,3 +19,5 @@ function ProductCards() {
     </div>
   )
 }
+
+export default ProductCards
