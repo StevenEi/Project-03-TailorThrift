@@ -20,7 +20,6 @@ import { setContext } from '@apollo/client/link/context';
 import './assets/css/App.css';
 import Logo from './assets/Logo.png';
 
-
 const httpLink = createHttpLink({
   uri: '/graphql',
 });
@@ -67,14 +66,12 @@ function App() {
                   </li>
                 </ul>
               </div>
-
-
-
             </nav>
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
               <Route path="/signup" element={<Signup />} />
+              <Route path="/products" element={<Products />} />
               <Route exact path="/success" component={Success} />
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
@@ -83,7 +80,6 @@ function App() {
           </BrowserRouter>
         </StoreProvider>
       </div>
-
     </ApolloProvider>
   );
 }

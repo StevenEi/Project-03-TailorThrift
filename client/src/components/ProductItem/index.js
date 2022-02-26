@@ -9,11 +9,14 @@ function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
   const {
+    productName,
+    description,
     image,
-    name,
     _id,
     price,
-    quantity
+    quantity,
+    size,
+    categoryId
   } = item;
 
   const { cart } = state
@@ -43,13 +46,16 @@ function ProductItem(item) {
     <div className="card px-1 py-1">
       <Link to={`/products/${_id}`}>
         <img
-          alt={name}
+          alt={productName}
           src={`/images/${image}`}
         />
-        <p>{name}</p>
+        <p>{productName}</p>
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
+        <p>{description}</p>
+        <p>{size}</p>
+        <p>{categoryId}</p>
         <span>${price}</span>
       </div>
       <button onClick={addToCart}>Add to cart</button>

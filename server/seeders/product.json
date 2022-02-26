@@ -40,14 +40,17 @@
         "descriptiion":"hankerchief",
         "image": "https://image.menswearhouse.com/is/image/TMW/MW40_88PD_01_PRONTO_UOMO_MARINE_SET?$40MainPDP$",
         "price": 5.00,
-        "quantity": 5
+        "quantity": 5,
+        "size": "accessory",
+        "categoryId": 5
     },
     {
         "productName": "measurement kit",
         "descriptiion":"measurement kit mens",
         "image": "https://m.media-amazon.com/images/I/61vysAVtFBL._AC_SL1406_.jpg",
         "price": 5.00,
-        "quantity": 6
-
+        "quantity": 6,
+        "size": "accessory",
+        "categoryId": 5
     }
 ]
