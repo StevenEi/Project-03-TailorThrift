@@ -4,16 +4,23 @@ import '../assets/css/Home.css'
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 import Cart from "../components/Cart";
+import ProductList from "../components/ProductList";
+import CategoryMenu from "../components/CategoryMenu";
+
 
 
 const Home = () => {
   return (
     <div>
-        <div>
-          <img src={Banner} alt='banner' class='banner'/></div>
-          <CategoryMenu />
-      <ProductList />
+
+<div>
+<img src={Banner} alt='banner' class='banner'/></div>        
+
+         {/* currently using boiler plate element from activities */}
+        <CategoryMenu />
+        <ProductList />
         <Cart />
+
     </div>
   );
 };
