@@ -11,7 +11,7 @@ const Home = () => {
   return (
     <div>
 
-<div>
+<div class='logoContainer'>
 <img src={Banner} alt='banner' class='banner'/></div>        
 
          {/* currently using boiler plate element from activities */}

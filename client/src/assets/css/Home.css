@@ -1,7 +1,11 @@
 
-
+.logoContainer{
+    text-align-last: center;
+}
 
 .banner {
     margin: 50px;
     width: 90%;
+    max-width: 900px;
+    justify-content: center;
 }
