@@ -17,6 +17,11 @@ const categorySchema = new Schema({
     type: Boolean,
     required: true,
     trim: true
+  },
+  accessories: {
+    type: Boolean,
+    required: true,
+    trim: true
   }
 });
 

@@ -1,16 +1,14 @@
 import React from "react";
-import ProductCards from "../components/ProductCards";
-
-const productCategories = ['men', 'women']
+import CategoryMenu from "../components/CategoryMenu";
+import ProductList from "../components/ProductList";
+import Cart from "../components/Cart";
 
 export default function Products(){
     return (
         <div>
-            <h1>Products</h1>
-            <ul>Categories</ul>
-                <ProductCards pCards={productCategories}/>
-            
+            <CategoryMenu />
+            <ProductList />
+            <Cart />
         </div>
     )
-
 }
