@@ -49,10 +49,10 @@ function CategoryMenu() {
         <button
           key={item._id}
           onClick={() => {
-            handleClick(item.categoryId);
+            handleClick(item._id);
           }}
         >
-          {item.categoryName}
+          {item.name}
         </button>
       ))}
     </div>

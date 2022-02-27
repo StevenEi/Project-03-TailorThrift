@@ -29,13 +29,12 @@ export const QUERY_ALL_PRODUCTS = gql`
   {
     products {
       _id
-      productName
+      name
       description
       image
       price
       quantity
       size
-      categoryId
     }
   }
 `;
@@ -44,7 +43,7 @@ export const QUERY_CATEGORIES = gql`
   {
     categories {
       _id
-      categoryName
+      name
     }
   }
 `;

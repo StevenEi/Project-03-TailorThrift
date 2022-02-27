@@ -54,11 +54,10 @@ function ProductList() {
               key={product._id}
               _id={product._id}
               image={product.image}
-              name={product.productName}
+              name={product.name}
               price={product.price}
               quantity={product.quantity}
               size={product.size}
-              categoryId={product.categoryId}
             />
           ))}
         </div>
