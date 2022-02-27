@@ -5,7 +5,7 @@ import {
   UPDATE_CATEGORIES,
   UPDATE_CURRENT_CATEGORY,
 } from '../../utils/actions';
-import { QUERY_CATEGORIES } from '../../utils/queries';
+import { QUERY_CATEGORIES } from "../../utils/queries"
 import { idbPromise } from '../../utils/helpers';
 
 function CategoryMenu() {
@@ -17,6 +17,7 @@ function CategoryMenu() {
 
   useEffect(() => {
     if (categoryData) {
+      console.log("category data", categoryData)
       dispatch({
         type: UPDATE_CATEGORIES,
         categories: categoryData.categories,
@@ -48,10 +49,10 @@ function CategoryMenu() {
         <button
           key={item._id}
           onClick={() => {
-            handleClick(item._id);
+            handleClick(item.categoryId);
           }}
         >
-          {item.name}
+          {item.categoryName}
         </button>
       ))}
     </div>
