@@ -38,8 +38,9 @@ function ProductList() {
       return state.products;
     }
 
+    // Changing line 43 to product.categoryId doesn't give the results I want I don't think
     return state.products.filter(
-      (product) => product.category._id === currentCategory
+      (product) => product.categoryId === currentCategory
     );
   }
 
@@ -53,11 +54,10 @@ function ProductList() {
               key={product._id}
               _id={product._id}
               image={product.image}
-              name={product.productName}
+              name={product.name}
               price={product.price}
               quantity={product.quantity}
               size={product.size}
-              categoryId={product.categoryId}
             />
           ))}
         </div>
