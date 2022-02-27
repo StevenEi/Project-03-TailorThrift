@@ -4,8 +4,6 @@ const typeDefs = gql`
   type Category {
     _id: ID
     categoryName: String
-    categoryId: Int
-    products: [Product]
   }
 
   type Product {
@@ -14,9 +12,8 @@ const typeDefs = gql`
     description: String
     image: String
     price: Float
-    quantity: Int
     size: String
-    categoryId: Int
+    category: Category
   }
 
   type Order {

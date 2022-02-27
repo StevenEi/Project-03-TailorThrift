@@ -8,6 +8,7 @@ export const QUERY_PRODUCTS = gql`
       description
       price
       quantity
+      size
       image
       category {
         _id
@@ -44,7 +45,6 @@ export const QUERY_CATEGORIES = gql`
     categories {
       _id
       categoryName
-      categoryId
     }
   }
 `;
