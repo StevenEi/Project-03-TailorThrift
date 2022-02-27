@@ -9,10 +9,10 @@ function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
   const {
+    _id,
     productName,
     description,
     image,
-    _id,
     price,
     quantity,
     size,
