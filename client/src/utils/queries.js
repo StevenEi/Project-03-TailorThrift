@@ -4,10 +4,11 @@ export const QUERY_PRODUCTS = gql`
   query getProducts($category: ID) {
     products(category: $category) {
       _id
-      name
+      productName
       description
       price
       quantity
+      size
       image
       category {
         _id
@@ -46,9 +47,6 @@ export const QUERY_CATEGORIES = gql`
     categories {
       _id
       categoryName
-      tops
-      bottoms
-      accessories
     }
   }
 `;

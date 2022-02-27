@@ -1,56 +1,56 @@
 [
     {
-       "productName": "shirt",
-       "descriptiion":"Light blue dress shirt",
+       "name": "shirt",
+       "description":"Light blue dress shirt",
        "image": "https://s7.landsend.com/is/image/LandsEnd/453157_CT15_LF_BLU?$210x315$",
        "price": 10.00,
        "quantity": 1,
        "size": "large",
-       "categoryId": 1
+       "category": "categories[0]._id"
     },
     {
-        "productName": "slacks",
-        "descriptiion":"Black slacks",
+        "name": "slacks",
+        "description":"Black slacks",
         "image": "https://bonobos-prod-s3.imgix.net/products/227408/original/PANT_DRESS-PANT_BWB00288SBLR45_3.jpg?1644738352=&auto=format&fit=clip&cs=srgb&w=414&q=75",
         "price": 20.00,
         "quantity": 1,
         "size": "large",
-        "categoryId": 2
+        "category": "categories[1]._id"
     },
     {
-        "productName": "blazer",
-        "descriptiion":"Black blazer",
+        "name": "blazer",
+        "description":"Black blazer",
         "image": "https://bonobos-prod-s3.imgix.net/products/227706/original/BLAZER_CASUAL-BLAZER_BBZ00351SBK394_40_outfitter.jpg?1645170744=&auto=format&fit=clip&cs=srgb&w=414&q=75",
         "price": 50.00,
         "quantity": 1,
         "size": "large",
-        "categoryId": 3  
+        "category": "categories[2]._id" 
     },
     {
-        "productName": "tie",
-        "descriptiion":"striped tie",
+        "name": "tie",
+        "description":"striped tie",
         "image": "https://www.rlmedia.io/is/image/PoloGSI/s7-1356630_alternate1?$rl_df_pdp_5_7$",
         "price": 10.00,
         "quantity": 1,
         "size": "large",
-        "categoryId": 4
+        "category": "categories[3]._id"
     },
     {
-        "productName": "accessories",
-        "descriptiion":"hankerchief",
+        "name": "accessories",
+        "description":"hankerchief",
         "image": "https://image.menswearhouse.com/is/image/TMW/MW40_88PD_01_PRONTO_UOMO_MARINE_SET?$40MainPDP$",
         "price": 5.00,
         "quantity": 5,
         "size": "accessory",
-        "categoryId": 5
+        "category": "categories[4]._id"
     },
     {
-        "productName": "measurement kit",
-        "descriptiion":"measurement kit mens",
+        "name": "measurement kit",
+        "description":"measurement kit mens",
         "image": "https://m.media-amazon.com/images/I/61vysAVtFBL._AC_SL1406_.jpg",
         "price": 5.00,
         "quantity": 6,
         "size": "accessory",
-        "categoryId": 5
+        "category": "categories[5]._id"
     }
 ]

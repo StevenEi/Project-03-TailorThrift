@@ -3,7 +3,7 @@ const { gql } = require('apollo-server-express');
 const typeDefs = gql`
   type Category {
     _id: ID
-    name: String
+    categoryName: String
   }
 
   type Product {
@@ -13,6 +13,7 @@ const typeDefs = gql`
     image: String
     quantity: Int
     price: Float
+    size: String
     category: Category
   }
 
