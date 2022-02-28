@@ -40,7 +40,7 @@ function ProductList() {
 
     // Changing line 43 to product.categoryId doesn't give the results I want I don't think
     return state.products.filter(
-      (product) => product.categoryId === currentCategory
+      (product) => product.category._id === currentCategory
     );
   }
 

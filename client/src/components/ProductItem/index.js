@@ -10,13 +10,11 @@ function ProductItem(item) {
 
   const {
     _id,
-    productName,
-    description,
+    name,
     image,
     price,
     quantity,
-    size,
-    categoryId
+    size
   } = item;
 
   const { cart } = state
@@ -46,16 +44,14 @@ function ProductItem(item) {
     <div className="card px-1 py-1">
       <Link to={`/products/${_id}`}>
         <img
-          alt={productName}
+          alt={name}
           src={`/images/${image}`}
         />
-        <p>{productName}</p>
+        <p>{name}</p>
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <p>{description}</p>
         <p>{size}</p>
-        <p>{categoryId}</p>
         <span>${price}</span>
       </div>
       <button onClick={addToCart}>Add to cart</button>
