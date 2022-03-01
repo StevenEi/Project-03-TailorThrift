@@ -4,8 +4,29 @@
 }
 
 .banner {
-    margin: 50px;
-    width: 90%;
-    max-width: 900px;
-    justify-content: center;
+    margin: 20px;
+    width: 100vw;
+    max-width: 1000px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    z-index: 800;
+    /* position:fixed; */
+}
+
+.bannerText{
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: lighter;
+    line-height: 80px;
+    font-size: 65px;
+    color:white;
+    position: absolute;
+    left:0%;
+    max-width: 280px;
+    margin-left: 55%;
+    margin-top: -455px;
+    text-align: center;
+    z-index: 900;
+    
+
 }

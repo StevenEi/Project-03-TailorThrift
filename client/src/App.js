@@ -6,6 +6,7 @@ import Carousel from "./components/Carousel"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Success from './pages/Success';
+import Cart from "./components/Cart";
 import OrderHistory from './pages/OrderHistory';
 import Detail from "./pages/Detail"
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom"
@@ -19,6 +20,7 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import './assets/css/App.css';
 import Logo from './assets/Logo.png';
+import LoggedOut from './assets/LoggedOut.png'
 
 
 const httpLink = createHttpLink({
@@ -47,20 +49,27 @@ function App() {
         <StoreProvider>
           <BrowserRouter>
             <Header />
-            <nav class='header navbar navbar-expand-lg navbar-light bg-light'>
-              <a class="navbar-brand" href="#">
-                <img src={Logo} alt='Logo' class='logo ' />
-              </a>
+            <div>
+              <Cart />
+              
+              </div>
+            <a class="navbar-brand" href="#">
+              <img src={Logo} alt='Logo' class='logo ' />
+            </a>
+            <Link to="/login" class='appLink'>
+                      <img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon'/></Link>
+
+
+            <nav class='header navbar navbar-expand-lg '>
+
               <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                   <li class="nav-item active">
                     <Link to="/" class='appLink'>Home</Link>
                   </li>
                   <li class="nav-item">
-                    <Link to="/login" class='appLink'>Login</Link>
-                  </li>
-                  <li class="nav-item">
-                    <Link to="/signup" class='appLink'>Signup</Link>
+                    <Link to="/login" class='appLink'>
+                      <img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon'/></Link>
                   </li>
                   <li class="nav-item">
                     <Link to="/products" class='appLink'>Products</Link>
@@ -74,7 +83,6 @@ function App() {
             <Routes>
               <Route path="/" element={<Home />} />
               <Route path="/login" element={<Login />} />
-              <Route path="/signup" element={<Signup />} />
               <Route exact path="/success" component={Success} />
               <Route exact path="/orderHistory" component={OrderHistory} />
               <Route exact path="/products/:id" component={Detail} />
