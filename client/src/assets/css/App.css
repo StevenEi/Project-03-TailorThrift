@@ -4,24 +4,38 @@
 }
 
 .logo {
-    height: 50px;
-    margin-top:5px;
+    height: 30px;
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /* position:absolute; */
     
 }
 
 .header{
     background-color: white;
     color: var(--darkblue);
-    /* top: 50% */
-    align-items: center !important;
-    display: inline-flex !important;
 
+
+}
+
+.headerIcons{
+    position: absolute;
+    right: 1%;
 }
 
 .appLink{
     color: var(--dark-grey)
 
+}
+
+.loggedOutIcon{
+    height: 40px;
+}
+
+
+
+.cartHeaderIcon{
+    display:flex;
+    justify-self: flex-start;
 }

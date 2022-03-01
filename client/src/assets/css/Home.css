@@ -4,9 +4,9 @@
 }
 
 .banner {
-    margin: 20px;
+    margin: 10px;
     width: 100vw;
-    max-width: 1000px;
+    max-width: 1100px;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -18,15 +18,73 @@
     font-family: 'Cormorant Garamond', serif;
     font-weight: lighter;
     line-height: 80px;
-    font-size: 65px;
+    font-size: 80px;
     color:white;
     position: absolute;
     left:0%;
-    max-width: 280px;
-    margin-left: 55%;
-    margin-top: -455px;
-    text-align: center;
+    max-width: 320px;
+    margin-left: 15%;
+    margin-top: -400px;
+    text-align: left;
     z-index: 900;
-    
+}
 
+.featureSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top:80px !important;
+}
+
+.featureTitle{
+    font-size: 25px;
+    margin:0px
+}
+
+.feature{
+max-height: 300px;
+width: 210px;
+}
+
+
+
+.CategorySection{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top:80px !important;
+}
+
+.featureLink{
+    background-color: white;
+}
+
+.MeasurementSection{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 1000px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+    margin-top:80px !important;
+}
+
+.measure{
+    background-color: grey;
+    height: 500px;
+}
+
+.measure2{
+    padding: 0px;
+}
+
+.measurePhoto{
+    max-width: 500px;
+    padding: 0px !important;
 }
