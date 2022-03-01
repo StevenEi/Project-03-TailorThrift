@@ -17,7 +17,7 @@ export const ADD_ORDER = gql`
       purchaseDate
       products {
         _id
-        name
+        productName
         description
         price
         quantity

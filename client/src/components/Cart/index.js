@@ -18,11 +18,13 @@ const Cart = () => {
 
   useEffect(() => {
     if (data) {
+      console.log(data.checkout.session)
       stripePromise.then((res) => {
         res.redirectToCheckout({ sessionId: data.checkout.session });
       });
     }
   }, [data]);
+
 
   useEffect(() => {
     async function getCart() {
@@ -55,7 +57,6 @@ const Cart = () => {
         productIds.push(item._id);
       }
     });
-
     getCheckout({
       variables: { products: productIds },
     });

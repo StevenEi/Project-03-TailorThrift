@@ -3,30 +3,60 @@
         "firstName": "Mike",
         "lastName": "Jones",
         "email": "mikeJones@mike.com",
-        "password": "12345"
+        "password": "12345",
+        "chest": "25",
+        "arms": "30",
+        "waist": "25",
+        "inseam": "35"
     },
     {
         "firstName": "Doug",
         "lastName": "Jones",
         "email": "dougJones@doug.com",
-        "password": "12345"
+        "password": "12345",
+        "chest": "25",
+        "arms": "30",
+        "waist": "25",
+        "inseam": "35"
     },
     {
         "firstName": "John",
         "lastName": "Jones",
         "email": "johnJones@john.com",
-        "password": "12345"
+        "password": "12345",
+        "chest": "25",
+        "arms": "30",
+        "waist": "25",
+        "inseam": "35"
     },
     {
         "firstName": "Dave",
         "lastName": "Jones",
         "email": "daveJones@dave.com",
-        "password": "12345"
+        "password": "12345",
+        "chest": "25",
+        "arms": "30",
+        "waist": "25",
+        "inseam": "35"
     },
     {
         "firstName": "Tom",
         "lastName": "Jones",
         "email": "tomJones@tom.com",
-        "password": "12345"
+        "password": "12345",
+        "chest": "25",
+        "arms": "30",
+        "waist": "25",
+        "inseam": "35"
+    },
+    {
+        "firstName": "Leslie",
+        "lastName": "Jones",
+        "email": "leslieJones@tom.com",
+        "password": "12345",
+        "chest": "25",
+        "arms": "30",
+        "waist": "25",
+        "inseam": "35"
     }
 ]

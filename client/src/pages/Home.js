@@ -1,11 +1,11 @@
 import React from 'react'
 import Banner from '../assets/banner.png'
 import '../assets/css/Home.css'
+
 import ProductList from "../components/ProductList";
 import CategoryMenu from "../components/CategoryMenu";
 // import Cart from "../components/Cart";
 import FeatureCards from '../components/FeatureCards';
-
 
 
 const Home = () => {
@@ -32,6 +32,7 @@ const Home = () => {
         {/* <CategoryMenu />
         <ProductList /> */}
         {/* <Cart /> */}
+
 
     </div>
   );

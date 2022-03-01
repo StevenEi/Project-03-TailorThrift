@@ -1,28 +1,20 @@
 [
     {
-        "categoryName": "Shirts",
-        "categoryId": 1
+        "name": "Shirts"
     },
     {
-        "categoryName": "Slacks",
-        "categoryId": 2
+        "name": "Slacks"
     },
     {
-        "categoryName": "Blazer" ,
-        "categoryId": 3
+        "name": "Blazer" 
     },
     {
-        "categoryName": "Tie",
-        "categoryId": 4
+        "name": "Tie"
     },
     {
-        "categoryName": "Accessories",
-        "categoryId": 5
+        "name": "Accessories"
     },
     {
-        "categoryName": "Measurement Kit",
-        "categoryId": 6
+        "name": "Measurement Kit"
     }
-
-    
 ]

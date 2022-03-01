@@ -9,11 +9,12 @@ function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
 
   const {
-    image,
-    name,
     _id,
+    name,
+    image,
     price,
-    quantity
+    quantity,
+    size
   } = item;
 
   const { cart } = state
@@ -50,6 +51,7 @@ function ProductItem(item) {
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
+        <p>{size}</p>
         <span>${price}</span>
       </div>
       <button onClick={addToCart}>Add to cart</button>
