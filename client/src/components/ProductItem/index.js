@@ -11,6 +11,7 @@ function ProductItem(item) {
   const {
     _id,
     name,
+    description,
     image,
     price,
     quantity,
@@ -45,13 +46,14 @@ function ProductItem(item) {
       <Link to={`/products/${_id}`}>
         <img
           alt={name}
-          src={`/images/${image}`}
+          src={process.env.PUBLIC_URL + image}
         />
         <p>{name}</p>
       </Link>
       <div>
         <div>{quantity} {pluralize("item", quantity)} in stock</div>
         <p>{size}</p>
+        <p>{description}</p>
         <span>${price}</span>
       </div>
       <button onClick={addToCart}>Add to cart</button>
