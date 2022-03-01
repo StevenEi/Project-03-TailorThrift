@@ -48,31 +48,17 @@ function App() {
         <StoreProvider>
           <BrowserRouter>
             <Header />
-            <div>
-              <Cart />
-              
-              </div>
+            <nav class='header navbar navbar-expand-lg '>
             <a class="navbar-brand" href="#">
               <img src={Logo} alt='Logo' class='logo ' />
             </a>
-            <Link to="/login" class='appLink'>
-                      <img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon'/></Link>
-
-
-            <nav class='header navbar navbar-expand-lg '>
-
-              <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mr-auto">
-                  <li class="nav-item active">
-                    <Link to="/" class='appLink'>Home</Link>
-                  </li>
+              <div class="collapse navbar-collapse headerIcons" id="navbarSupportedContent">
+                <ul class="navbar-nav headerIcons">
                   <li class="nav-item">
                     <Link to="/login" class='appLink'>
                       <img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon'/></Link>
                   </li>
-                  <li class="nav-item">
-                    <Link to="/products" class='appLink'>Products</Link>
-                  </li>
+                  <li class='cartHeaderIcon'> <Cart /></li>
                 </ul>
               </div>
             </nav>

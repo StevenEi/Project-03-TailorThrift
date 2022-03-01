@@ -46,8 +46,9 @@
   }
 
   .CartEmptyIcon{
-    width: 50px;
+    width: 40px;
     float: right;
+
   }
   
   .CartEmptyIcon:hover {
