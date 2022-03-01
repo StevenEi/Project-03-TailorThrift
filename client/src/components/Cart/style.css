@@ -31,20 +31,26 @@
     text-decoration: underline;
   }
   
-  .cart-closed {
+  .CartEmpty {
     position: fixed;
     top: 2%;
-    right: 1%;
+    right: 99%;
     font-size: 2rem;
     cursor: pointer;
     background-color: var(--secondary);
     border-radius: 50%;
     padding: .25rem;
+    max-width: 50px;
+    max-height: 50px;
+    float: right;
+  }
+
+  .CartEmptyIcon{
     width: 50px;
-    height: 50px;
+    float: right;
   }
   
-  .cart-closed:hover {
+  .CartEmptyIcon:hover {
     transform: rotate(8deg);
   }
   
