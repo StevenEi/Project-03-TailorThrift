@@ -22,7 +22,7 @@ db.once('open', async () => {
       name: 'shirt',
       description:
         'Light blue dress shirt',
-      image: 'https://s7.landsend.com/is/image/LandsEnd/453157_CT15_LF_BLU?$210x315$',
+      image: "./images/BeigeSweater.png",
       category: categories[0]._id,
       price: 10.00,
       size: 'large',
