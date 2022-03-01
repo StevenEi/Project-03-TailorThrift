@@ -42,9 +42,14 @@ function CategoryMenu() {
     });
   };
 
+  const handleClick2 = () => {
+    window.location.reload();
+  }
+
   return (
     <div>
       <h2>Choose a Category:</h2>
+      <button onClick={handleClick2}>Click to View All Products</button>
       {categories.map((item) => (
         <button
           key={item._id}
