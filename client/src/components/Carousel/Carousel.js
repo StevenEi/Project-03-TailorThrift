@@ -1,20 +1,19 @@
 import React from 'react'
 import { Carousel } from "react-bootstrap"
-import photo1 from "../assets/testimage.jpg"
-import photo2 from "../assets/testimage2.png"
-import photo3 from "../assets/testimage3.jpg"
-import ".././index.css"
+import photo1 from "../../assets/testimage.jpg"
+// import photo2 from "../assets/testimage2.png"
+// import photo3 from "../assets/testimage3.jpg"
+import './style.css';
+
 
 function CarouselTest() {
     return (
         <div>
             <Carousel fade={true} className="carousel" controls={false}>
                 <Carousel.Item interval={2000}>
-                    <img
-                        className="d-block w-100"
-                        src={photo1}
-                        alt="First slide"
-                    />
+                        <div class='carousel'>
+
+                        </div>
                     <Carousel.Caption>
                         <h3>First slide label</h3>
                         <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
@@ -23,7 +22,7 @@ function CarouselTest() {
                 <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
-                        src={photo2}
+                        src={photo1}
                         alt="Second slide"
                     />
                     <Carousel.Caption>
@@ -34,7 +33,7 @@ function CarouselTest() {
                 <Carousel.Item interval={2000}>
                     <img
                         className="d-block w-100"
-                        src={photo3}
+                        src={photo1}
                         alt="Third slide"
                     />
                     <Carousel.Caption>

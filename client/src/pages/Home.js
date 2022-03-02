@@ -1,8 +1,8 @@
 import React from 'react'
 import Banner from '../assets/banner.png'
 import '../assets/css/Home.css'
-import ProductList from "../components/ProductList";
-import CategoryMenu from "../components/CategoryMenu";
+// import ProductList from "../components/ProductList";
+// import CategoryMenu from "../components/CategoryMenu";
 // import Cart from "../components/Cart";
 import FeatureCards from '../components/FeatureCard/FeatureCards.js';
 import Feature1 from '../assets/Feature1.png'
@@ -10,6 +10,7 @@ import Feature2 from '../assets/Feature2.png'
 import Feature3 from '../assets/Feature3.png'
 import Feature4 from '../assets/Feature4.png'
 import Measure from '../assets/measurePhoto.png'
+import CarouselTest from '../components/Carousel/Carousel.js';
 
 
 const Home = () => {
@@ -18,7 +19,7 @@ const Home = () => {
 
       <div class='logoContainer'>
         <img src={Banner} alt='banner' class='banner' />
-        <p class='bannerText'>Bring Confidence To What You Wear.</p>
+        <p class='bannerText'>Bring Confidence To What You Wear</p>
       </div>
       <div class='featureSection row'>
         <p class='featureTitle'>
@@ -48,7 +49,9 @@ const Home = () => {
       </div>
 
       <div class='MeasurementSection row'>
-        <div class='col measure1 measure'> Test</div>
+        <div class='col measure1 measure'> 
+        <CarouselTest/>
+        </div>
         <div class='col measure2 measure'> 
         <img src={Measure} alt="" class='measurePhoto'/></div>
 
