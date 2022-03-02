@@ -76,15 +76,15 @@ width: 210px;
 }
 
 .measure{
-    background-color: grey;
+    background-color: #212529 ;
     height: 500px;
 }
 
 .measure2{
-    padding: 0px;
+    padding: 0px !important;
 }
 
 .measurePhoto{
     max-width: 500px;
-    padding: 0px !important;
+
 }

@@ -13,6 +13,8 @@ import {
 } from '../utils/actions';
 import { useNavigate } from "react-router-dom";
 
+import CarouselTest from '../components/Carousel/Carousel.js';
+
 const Home = () => {
   const [state, dispatch] = useStoreContext();
   let navigate = useNavigate();
@@ -29,7 +31,7 @@ const Home = () => {
     <div>
       <div class='logoContainer'>
         <img src={Banner} alt='banner' class='banner' />
-        <p class='bannerText'>Bring Confidence To What You Wear.</p>
+        <p class='bannerText'>Bring Confidence To What You Wear</p>
       </div>
       <div class='featureSection row'>
         <p class='featureTitle'>
@@ -58,9 +60,11 @@ const Home = () => {
         </div>
       </div>
       <div class='MeasurementSection row'>
-        <div class='col measure1 measure'> Test</div>
-        <div class='col measure2 measure'>
-          <img src={Measure} alt="" class='measurePhoto' /></div>
+        <div class='col measure1 measure'> 
+        <CarouselTest/>
+        </div>
+        <div class='col measure2 measure'> 
+        <img src={Measure} alt="" class='measurePhoto'/></div>
       </div>
     </div>
   );
