@@ -6,6 +6,7 @@ import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
+import './style.css'
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
@@ -52,10 +53,10 @@ console.log('TEST FILTERED ((((((((((', test)
 console.log('RIght if statement test', !state.currentCategory)
 
   return (
-    <div className="my-2">
-      <h2>Our Products:</h2>
+    <div className=" productSection">
+      {/* <h2>Our Products:</h2> */}
       {state.products.length ? (
-        <div className="flex-row">
+        <div className="row">
           {filterProducts().map((product) => (
             <ProductItem
               key={product._id}
