@@ -7,6 +7,7 @@ import {
 } from '../../utils/actions';
 import { QUERY_CATEGORIES } from "../../utils/queries"
 import { idbPromise } from '../../utils/helpers';
+import './style.css'
 
 function CategoryMenu() {
   const [state, dispatch] = useStoreContext();
@@ -48,10 +49,9 @@ function CategoryMenu() {
 
   return (
     <div>
-      <h2>Choose a Category:</h2>
-      <button onClick={handleClick2}>Click to View All Products</button>
+    <div class='categorySection'>
       {categories.map((item) => (
-        <button
+        <button class='productPageButton'
           key={item._id}
           onClick={() => {
             handleClick(item._id);
@@ -59,7 +59,13 @@ function CategoryMenu() {
         >
           {item.name}
         </button>
+        
       ))}
+
+    </div>
+    <div>
+                  <button onClick={handleClick2} class='productPageButton'>Click to View All Products</button>
+    </div>
     </div>
   );
 }

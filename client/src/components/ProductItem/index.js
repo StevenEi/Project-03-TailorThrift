@@ -4,6 +4,7 @@ import { pluralize } from "../../utils/helpers";
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import './style.css';
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -42,21 +43,23 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={process.env.PUBLIC_URL + image}
-        />
-        <p>{name}</p>
-      </Link>
-      <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <p>{size}</p>
-        <p>{description}</p>
-        <span>${price}</span>
+    <div class='col'>
+      <div className="productCard">
+        <Link class='test' to={`/products/${_id}`}>
+          <img class='productImgCard'
+            alt={name}
+            src={process.env.PUBLIC_URL + image}
+          />
+          <p className="itemTitle">{name}</p>
+        </Link>
+        <div>
+          <p class='productText'>{size}</p>
+          <p class='productText'>{description}</p>
+          <div class='productText'>{quantity} {pluralize("item", quantity)} in stock</div>
+        </div>
+        <span class='price'>${price}</span>
+        <button class='addCartButton' onClick={addToCart}>Add to cart</button>
       </div>
-      <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }
