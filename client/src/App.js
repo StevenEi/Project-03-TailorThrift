@@ -2,7 +2,7 @@ import Home from "./pages/Home"
 import Footer from "./components/Footer"
 import Products from "./pages/Products"
 import Header from "./components/Header"
-import Carousel from "./components/Carousel"
+// import Carousel from "./components/Carousel/Carousel.js"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Success from './pages/Success';
