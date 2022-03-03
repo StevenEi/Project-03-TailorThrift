@@ -6,8 +6,10 @@ db.once('open', async () => {
 
   const categories = await Category.insertMany([
     { name: 'Shirts' },
-    { name: 'Slacks' },
+    { name: 'Sweaters'},
+    { name: 'Pants' },
     { name: 'Blazer' },
+    { name: 'Shoes' },
     { name: 'Tie' },
     { name: 'Accessories' },
     { name: 'Measurement Kit' }
@@ -19,28 +21,188 @@ db.once('open', async () => {
 
   const products = await Product.insertMany([
     {
-      name: 'shirt',
-      description:
-        'Light blue dress shirt',
-      image: "./images/BeigeSweater.png",
-      category: categories[0]._id,
-      price: 10.00,
-      size: 'large',
-      quantity: 5
-    },
+        name: 'Shirt',
+        description:
+          'Black Polo Shirt',
+        image: "./images/Tops/BlackPoloShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Shirt',
+        description:
+          'Black Solid Shirt',
+        image: "./images/Tops/BlackSolidShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Shirt',
+        description:
+          'Black Spotted Shirt',
+        image: "./images/Tops/BlackSpotShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Shirt',
+        description:
+          'Blue Gingham Shirt',
+        image: "./images/Tops/BlueGinghamShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 4
+      },
+      {
+        name: 'Shirt',
+        description:
+          'Blue Plaid Shirt',
+        image: "./images/Tops/BluePlaidShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Shirt',
+        description:
+          'Blue Polo Shirt',
+        image: "./images/Tops/BluePoloShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 3
+      },
+      {
+        name: 'Shirt',
+        description:
+          'Blue Solid Shirt',
+        image: "./images/Tops/BlueSolidShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Shirt',
+        description:
+          'Green Blue Plaid Shirt',
+        image: "./images/Tops/GreenBluePlaidShirt.png",
+        category: categories[0]._id,
+        price: 15.00,
+        size: 'large',
+        quantity: 2
+      },
+      {
+        name: 'Sweater',
+        description:
+          'Beige Sweater',
+        image: "./images/Tops/BeigeSweater.png",
+        category: categories[1]._id,
+        price: 25.00,
+        size: 'large',
+        quantity: 3
+      },
+      {
+        name: 'Sweater',
+        description:
+          'Black Sweater',
+        image: "./images/Tops/BlackSweater.png",
+        category: categories[1]._id,
+        price: 25.00,
+        size: 'large',
+        quantity: 2
+      },
+      {
+        name: 'Sweater',
+        description:
+          'Blue Sweather',
+        image: "./images/Tops/BlueSweater.png",
+        category: categories[1]._id,
+        price: 25.00,
+        size: 'large',
+        quantity: 2
+      },
     {
-      name: 'slacks',
+      name: 'Pants',
       description:
-        'Black slacks',
-      image: 'https://bonobos-prod-s3.imgix.net/products/227408/original/PANT_DRESS-PANT_BWB00288SBLR45_3.jpg?1644738352=&auto=format&fit=clip&cs=srgb&w=414&q=75',
-      category: categories[1]._id,
+        'Navy Pants',
+      image: './images/Bottoms/NavyPants.png',
+      category: categories[2]._id,
       price: 20.00,
       size: 'large',
       quantity: 5
     },
     {
-      name: 'blazer',
-      category: categories[2]._id,
+        name: 'Pants',
+        description:
+          'Medium Denim Pants',
+        image: './images/Bottoms/MediumDenimPants.png',
+        category: categories[2]._id,
+        price: 20.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Pants',
+        description:
+          'Khaki Pants',
+        image: './images/Bottoms/KhakiPants.png',
+        category: categories[2]._id,
+        price: 20.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Pants',
+        description:
+          'Grey Pattern Pants',
+        image: './images/Bottoms/GreyPatternPants.png',
+        category: categories[2]._id,
+        price: 20.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Pants',
+        description:
+          'Grey Pants',
+        image: './images/Bottoms/GreyPants.png',
+        category: categories[2]._id,
+        price: 20.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Pants',
+        description:
+          'Dark Grey Pants',
+        image: './images/Bottoms/DarkGreyPants.png',
+        category: categories[2]._id,
+        price: 20.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Pants',
+        description:
+          'Dark Denim Pants',
+        image: './images/Bottoms/DarkDenimPants.png',
+        category: categories[2]._id,
+        price: 20.00,
+        size: 'large',
+        quantity: 5
+      },
+    {
+      name: 'Blazer',
+      category: categories[3]._id,
       description:
         'Black blazer',
       image: 'https://bonobos-prod-s3.imgix.net/products/227706/original/BLAZER_CASUAL-BLAZER_BBZ00351SBK394_40_outfitter.jpg?1645170744=&auto=format&fit=clip&cs=srgb&w=414&q=75',
@@ -49,18 +211,118 @@ db.once('open', async () => {
       quantity: 5
     },
     {
-      name: 'tie',
-      category: categories[3]._id,
+        name: 'Shoes',
+        category: categories[4]._id,
+        description:
+          'Black Shoes',
+        image: './images/Accessories/BlackShoes.png',
+        price: 35.00,
+        size: '10',
+        quantity: 3
+      },
+      {
+        name: 'Shoes',
+        category: categories[4]._id,
+        description:
+          'Brown Shoes',
+        image: './images/Accessories/BrownShoes.png',
+        price: 35.00,
+        size: '10',
+        quantity: 3
+      },
+      {
+        name: 'Shoes',
+        category: categories[4]._id,
+        description:
+          'Grey Shoes',
+        image: './images/Accessories/GreyShoes.png',
+        price: 35.00,
+        size: '10',
+        quantity: 3
+      },
+      {
+        name: 'Shoes',
+        category: categories[4]._id,
+        description:
+          'Tan Shoes',
+        image: './images/Accessories/TanShoes.png',
+        price: 35.00,
+        size: '10',
+        quantity: 3
+      },
+    {
+      name: 'Tie',
+      category: categories[5]._id,
       description:
-        'striped tie',
-      image: 'https://www.rlmedia.io/is/image/PoloGSI/s7-1356630_alternate1?$rl_df_pdp_5_7$',
+        'Black & Red Tie',
+      image: './images/Accessories/BlackRedTie.png',
       price: 10.00,
       size: 'large',
       quantity: 5
     },
     {
+        name: 'Tie',
+        category: categories[5]._id,
+        description:
+          'Brown Tie',
+        image: './images/Accessories/BrownTie.png',
+        price: 10.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Tie',
+        category: categories[5]._id,
+        description:
+          'Green & Blue Tie',
+        image: './images/Accessories/GreenBlueTie.png',
+        price: 10.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Tie',
+        category: categories[5]._id,
+        description:
+          'Green Plaid Tie',
+        image: './images/Accessories/GreenPlaidTie.png',
+        price: 10.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Tie',
+        category: categories[5]._id,
+        description:
+          'Grey & Blue',
+        image: './images/Accessories/GreyBlueTie.png',
+        price: 10.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Tie',
+        category: categories[5]._id,
+        description:
+          'Grey & Brown Tie',
+        image: './images/Accessories/GreyBrownTie.png',
+        price: 10.00,
+        size: 'large',
+        quantity: 5
+      },
+      {
+        name: 'Tie',
+        category: categories[5]._id,
+        description:
+          'Grey Tie',
+        image: './images/Accessories/GreyTie.png',
+        price: 10.00,
+        size: 'large',
+        quantity: 5
+      },
+    {
       name: 'accessories',
-      category: categories[4]._id,
+      category: categories[6]._id,
       description:
         'hankerchief',
       image: 'https://image.menswearhouse.com/is/image/TMW/MW40_88PD_01_PRONTO_UOMO_MARINE_SET?$40MainPDP$',
@@ -69,10 +331,40 @@ db.once('open', async () => {
       quantity: 10
     },
     {
-      name: 'measurement kit',
-      category: categories[5]._id,
+        name: 'Accessories',
+        category: categories[6]._id,
+        description:
+          'Black Belt',
+        image: './images/Accessories/BlackBelt.png',
+        price: 35.00,
+        size: '36',
+        quantity: 10
+      },
+      {
+        name: 'Accessories',
+        category: categories[6]._id,
+        description:
+          'Brown Belt',
+        image: './images/Accessories/BrownBelt.png',
+        price: 35.00,
+        size: '36',
+        quantity: 10
+      },
+      {
+        name: 'Accessories',
+        category: categories[6]._id,
+        description:
+          'Tan Belt',
+        image: './images/Accessories/TanBelt.png',
+        price: 35.00,
+        size: '36',
+        quantity: 10
+      },
+    {
+      name: 'Measurement Kit',
+      category: categories[7]._id,
       description:
-        'measurement kit mens',
+        'Measurement Kit Mens',
       image: 'https://m.media-amazon.com/images/I/61vysAVtFBL._AC_SL1406_.jpg',
       price: 5.00,
       size: 'accessory',

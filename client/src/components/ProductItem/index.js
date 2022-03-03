@@ -18,7 +18,6 @@ function ProductItem(item) {
     quantity,
     size
   } = item;
-
   const { cart } = state
 
   const addToCart = () => {
@@ -48,7 +47,7 @@ function ProductItem(item) {
         <Link class='test' to={`/products/${_id}`}>
           <img class='productImgCard'
             alt={name}
-            src={process.env.PUBLIC_URL + image}
+            src={image}
           />
           <p className="itemTitle">{name}</p>
         </Link>
