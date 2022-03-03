@@ -46,15 +46,15 @@ const Home = () => {
         <div class='featureCard col feature4'><FeatureCards />
           <img src={Feature4} alt='' class='feature' /></div>
       </div >
-      <div class='CategorySection row'>
-        <div class='featureLink col'>
-          <button onClick={() => {
+      <div class=' row'>
+        <div class='CategorySection col'>
+          <button  class='CategoryLink  ' onClick={() => {
             handleClick('621e6c37003b7d73144660f7')
           }}>Shop Shirts</button>
-          <button onClick={() => {
+          <button class='CategoryLink  ' onClick={() => {
             handleClick('621e6c37003b7d73144660f8')
           }}>Shop Slacks</button>
-          <button onClick={() => {
+          <button class='CategoryLink  ' onClick={() => {
             handleClick('621e6c37003b7d73144660fb')
           }}>Shop Accessories</button>
         </div>
