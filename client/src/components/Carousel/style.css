@@ -1,3 +1,7 @@
 .carousel{
-    background-color: #212529 ;
+    background-color: #212529 ; 
+}
+
+.carSlide{
+    max-height: 500px;
 }
