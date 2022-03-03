@@ -58,15 +58,12 @@ const resolvers = {
       const line_items = [];
 
       const { products } = await order.populate('products').execPopulate();
-      console.log('hello1')
-      console.log(products)
       for (let i = 0; i < products.length; i++) {
         const product = await stripe.products.create({
           name: products[i].name,
           description: products[i].description,
           images: [`${url}/images/${products[i].image}`]
         });
-        console.log('hello')
         const price = await stripe.prices.create({
           product: product.id,
           unit_amount: products[i].price * 100,
@@ -86,7 +83,6 @@ const resolvers = {
         success_url: `${url}/success?session_id={CHECKOUT_SESSION_ID}`,
         cancel_url: `${url}/`
       });
-      console.log('session', session)
       return { session: session.id };
     }
   },
