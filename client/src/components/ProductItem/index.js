@@ -42,23 +42,24 @@ function ProductItem(item) {
   }
 
   return (
-    <div class='col'>
+    <div class='col columnStyle'>
       <div className="productCard">
         <Link class='productTitle' to={`/products/${_id}`}>
           <img class='productImgCard'
             alt={name}
             src={image}
           />
-          <span className="itemTitle">{name}</span>
-          <span class='price'>${price}</span>
         </Link>
-        <div>
-          <p class='productText'>{size}</p>
-          <p class='productText'>{description}</p>
-          <div class='productText'>{quantity} {pluralize("item", quantity)} in stock</div>
+        <div class="productDesc">
+          <div className="itemTitle">{name} ${price}</div>
+          {/* <div className="productDesc"> */}
+          <div class='productText topText'>sz. {size}</div>
+          <div class='productText descQuant'>{description}</div>
+          <div class='productText descQuant'>{quantity} {pluralize("item", quantity)} in stock</div>
+
+          {/* </div> */}
         </div>
-        <span class='price'>${price}</span>
-        <button class='addCartButton' onClick={addToCart}>Add to cart</button>
+        {/* <button class='addCartButton' onClick={addToCart}>Add to cart</button> */}
       </div>
     </div>
   );
