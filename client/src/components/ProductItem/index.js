@@ -44,12 +44,13 @@ function ProductItem(item) {
   return (
     <div class='col'>
       <div className="productCard">
-        <Link class='test' to={`/products/${_id}`}>
+        <Link class='productTitle' to={`/products/${_id}`}>
           <img class='productImgCard'
             alt={name}
             src={image}
           />
-          <p className="itemTitle">{name}</p>
+          <span className="itemTitle">{name}</span>
+          <span class='price'>${price}</span>
         </Link>
         <div>
           <p class='productText'>{size}</p>
