@@ -1,30 +1,19 @@
 # Project 03 - TailorThrift
 
 ## Project Description 
- 
-## Visuals of Finished Product
+TailorThrift is an online clothing shopping platform aimed at delivering customers well-fitting tailored outfits at a fair price. Tailorthrift lives by the ABC motto (Affordable Bespoke Clothing) because everybody deserves to look their best. Additional information can be found in the About Us and Our Mission pages on the website.
 
-![Project Demo](TT1.gif)
-![Project Demo](TT2.gif)
-![Project Demo](TT3.gif)
-![Project Demo](TT4.gif)
-![Project Demo](TT5.gif)
+TailorThrift is a full stack MERN application where users can search different clothing options, add them to their carts, add credit card information and "purchase" those items (no actual items will be sent to the user... yet). This project contains the coding framework essential for any e-commerce website. 
 
 # Table of Contents 
-1. [Installation Information](#installation-information)
-2. [Usage](#usage)
-3. [Developers](#contributors)
-4. [Tests](#tests)
-5. [Questions](#questions)
-6. [Licensing](#licensing)
+1. [Installation Information](#installation-information) [Usage](#usage)
+2. [Developers](#contributors)
+3. [Questions](#questions)
+4. [Licensing](#licensing)
+5. [Visuals of Finished Product](#visuals-of-finished-product)
 
 ## Installation Information
-Install the npm registry using "npm install" in the console and then install any desired packages by typing "[package name] install". This project utilizes a variety of npm packages which will need to be installed prior to use, type "npm i" in the appropriate folder location to install them.
-
-No additional installation information is necessary.
-
-## Usage 
-This application is a text editor that runs in the browser. The project utilizes code techniques to display data persistence as it will function offline.
+Install the NPM registry using the "npm run install" script in the console. This project uses a variety of NPM packages such as stripe, bootstrap, nodemailer and JWT. Please see the package.json files for exhaustive lists.
 
 ## Developers
 Jeff Wymore <br>
@@ -35,13 +24,18 @@ Oscar Plumridge
 
 And a shout out to the UW Boot Camp instructional staff for helping troubleshoot issues during the development process.
 
-## Tests 
-No formal testing was performed on this project prior to 
-
 ## Questions 
-Please refer to my GitHub for other repositories and associated source code. Please send any questions concerning my projects to the email listed below. <br />
-Github account: https://github.com/StevenEi <br /> 
-Send me an email at: Private for now.
+Please refer to the GitHub for the source code. Please visit the page for information on how to contact the developers. <br />
+Github account: https://github.com/StevenEi/Project-03-TailorThrift <br /> 
+Launched Project: https://tailorthrift.herokuapp.com/ <br />
     
 ## Licensing 
 No licensing currently.
+
+## Visuals of Finished Product
+
+![Project Demo](TT1.gif) <br />
+![Project Demo](TT2.gif) <br />
+![Project Demo](TT3.gif) <br />
+![Project Demo](TT4.gif) <br />
+![Project Demo](TT5.gif) <br />
