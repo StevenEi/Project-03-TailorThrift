@@ -1,0 +1,8 @@
+body {
+    background-color: #acd6c2;
+}
+.posts-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
