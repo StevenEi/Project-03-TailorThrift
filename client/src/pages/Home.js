@@ -35,8 +35,10 @@ const Home = () => {
       </div>
       <div class='featureSection row'>
         <p class='featureTitle'>
-          Featured Items
+          {/* Featured Items */}
         </p>
+
+        
         <div class='featureCard  col feature1'><FeatureCards />
           <img src={Feature1} alt='' class='feature' /> </div>
         <div class='featureCard col feature2'><FeatureCards />

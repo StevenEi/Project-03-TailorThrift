@@ -2,6 +2,7 @@ import React from 'react';
 import { useStoreContext } from "../../utils/GlobalState";
 import { REMOVE_FROM_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import '../Cart/style.css'
 
 const CartItem = ({ item }) => {
 
@@ -47,8 +48,9 @@ const CartItem = ({ item }) => {
       <div>
         <div>{item.name}, ${item.price}</div>
         <div>
-          <span>Qty:</span>
+          <span>Qty</span>
           <input
+            class='qtyField'
             type="number"
             placeholder="1"
             value={item.purchaseQuantity}
