@@ -205,7 +205,7 @@ db.once('open', async () => {
       category: categories[3]._id,
       description:
         'Black blazer',
-      image: 'https://bonobos-prod-s3.imgix.net/products/227706/original/BLAZER_CASUAL-BLAZER_BBZ00351SBK394_40_outfitter.jpg?1645170744=&auto=format&fit=clip&cs=srgb&w=414&q=75',
+      image: './images/Tops/Blazer.jpg',
       price: 50.00,
       size: 'large',
       quantity: 5
@@ -325,7 +325,7 @@ db.once('open', async () => {
       category: categories[6]._id,
       description:
         'hankerchief',
-      image: 'https://image.menswearhouse.com/is/image/TMW/MW40_88PD_01_PRONTO_UOMO_MARINE_SET?$40MainPDP$',
+      image: './images/Accessories/Hankerchief.png',
       price: 5.00,
       size: 'accessory',
       quantity: 10
@@ -365,7 +365,7 @@ db.once('open', async () => {
       category: categories[7]._id,
       description:
         'Measurement Kit Mens',
-      image: 'https://m.media-amazon.com/images/I/61vysAVtFBL._AC_SL1406_.jpg',
+      image: './images/Accessories/MeasurementKit.png',
       price: 5.00,
       size: 'accessory',
       quantity: 5
