@@ -23,7 +23,9 @@ import {
 import { setContext } from '@apollo/client/link/context';
 import './assets/css/App.css';
 import Logo from './assets/Logo.png';
+import LoggedIn from './assets/LoggedIn.png'
 import LoggedOut from './assets/LoggedOut.png'
+import Auth from './utils/auth';
 
 const httpLink = createHttpLink({
   uri: '/graphql',
@@ -60,7 +62,7 @@ function App() {
                 <ul class="navbar-nav headerIcons">
                   <li class="nav-item">
                     <Link to="/login" class='appLink'>
-                      <img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon' /></Link>
+                      {Auth.loggedIn() ? (<img src={LoggedIn} alt='loggedOutIcon' class='loggedOutIcon' />) : (<img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon' />)}</Link>
                   </li>
                   <li class='cartHeaderIcon'> <Cart /></li>
                 </ul>

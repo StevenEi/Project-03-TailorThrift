@@ -61,8 +61,8 @@ const resolvers = {
       for (let i = 0; i < products.length; i++) {
         const product = await stripe.products.create({
           name: products[i].name,
-          description: products[i].description,
-          images: [`${url}/images/${products[i].image}`]
+          description: `${products[i].description}, Size: ${products[i].size}`
+          // images: [`${url}/images/${products[i].image}`]
         });
         const price = await stripe.prices.create({
           product: product.id,
@@ -74,7 +74,7 @@ const resolvers = {
           price: price.id,
           quantity: 1
         });
-      }
+      } 
 
       const session = await stripe.checkout.sessions.create({
         payment_method_types: ['card'],
