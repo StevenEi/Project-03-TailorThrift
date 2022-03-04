@@ -103,6 +103,7 @@ function Detail() {
               <p class='singleProductText'>{currentProduct.description}</p>
 
               <p>
+              <p class='singleProductText'>Size: {currentProduct.size}{' '}</p>
                 <p class='singleProductText'>Price: ${currentProduct.price}{' '}</p>
                 <div>
                  <button class='singleProductBtn' onClick={addToCart}>Add to Cart</button> 
