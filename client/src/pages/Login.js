@@ -64,9 +64,11 @@ function Login(props) {
               <p className="error-text">The provided credentials are incorrect</p>
             </div>
           ) : null}
-          <div className="flex-row flex-end loginButton">
+          {Auth.loggedIn() ? (<div className="flex-row flex-end logoutButton">
+            <button type="submit" class='logoutBtn' onClick={() => Auth.logout()}>Logout</button>
+          </div>) : (<div className="flex-row flex-end loginButton">
             <button type="submit" class='loginBtn'>Login</button>
-          </div>
+          </div>)}
         </form>
       </div>
       <div className='redirectSection'>
