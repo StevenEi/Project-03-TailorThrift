@@ -30,7 +30,7 @@ const Posts = () => {
     <div className="posts-container">
       {blogPosts.map((post, index) => (
         <div key={index} index={index}>
-          <h1>title: {post.title}</h1>
+          <h1>Title: {post.title}</h1>
           <h3>Comment: {post.body}</h3>
           <h3>Author: {post.author}</h3>
 
