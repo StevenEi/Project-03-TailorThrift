@@ -11,6 +11,8 @@
     background-color: white;
     color: var(--darkblue);
     text-decoration: none;
+    padding:0px !important;
+    
 
 
 }
