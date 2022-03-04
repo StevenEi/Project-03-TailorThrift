@@ -1,3 +1,41 @@
 .carousel{
-    background-color: #212529 ;
+    background-color: rgb(21,76,121); 
+}
+
+.carSlide{
+    max-height: 500px;
+}
+
+.carSlideText{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+}
+
+.carSlideTextMd{
+    position: absolute;
+    top: 27%;
+    left: 50%;
+}
+
+.carSlideTextLg{
+    position: absolute;
+    top: 22%;
+    left: 50%;
+}
+
+.carSlideTextXl{
+    position: absolute;
+    top: 7%;
+    left: 50%;
+}
+
+.slideTitle{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 40px;
+}
+
+.slideText{
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 20px;
 }

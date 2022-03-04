@@ -1,0 +1,14 @@
+.productSection{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    max-width: 1200px;
+    margin-top: 50px;
+    margin-left: auto !important;
+    margin-right: auto !important;
+}
+
+.productTitle{
+    text-decoration: none;
+    text-align: left;
+}

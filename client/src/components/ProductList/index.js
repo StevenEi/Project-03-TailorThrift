@@ -6,16 +6,20 @@ import { useQuery } from '@apollo/client';
 import { QUERY_PRODUCTS } from '../../utils/queries';
 import { idbPromise } from '../../utils/helpers';
 import spinner from '../../assets/spinner.gif';
+import './style.css'
 
 function ProductList() {
   const [state, dispatch] = useStoreContext();
 
   const { currentCategory } = state;
 
-  const { loading, data } = useQuery(QUERY_PRODUCTS);
+ console.log('Current STATE!!!!', state)
 
+  const { loading, data } = useQuery(QUERY_PRODUCTS);
+  console.log(data)
   useEffect(() => {
     if (data) {
+
       dispatch({
         type: UPDATE_PRODUCTS,
         products: data.products,
@@ -34,23 +38,27 @@ function ProductList() {
   }, [data, loading, dispatch]);
 
   function filterProducts() {
-    if (!currentCategory) {
+    console.log('Current catuefory in filtered products!!!', state)
+    if (!state.currentCategory) {
       return state.products;
     }
-
-    // Changing line 43 to product.categoryId doesn't give the results I want I don't think
+console.log('WE r after the if in fileted!!')
     return state.products.filter(
       (product) => product.category._id === currentCategory
     );
   }
 
+  const test = filterProducts()
+console.log('TEST FILTERED ((((((((((', test)
+console.log('RIght if statement test', !state.currentCategory)
+
   return (
-    <div className="my-2">
-      <h2>Our Products:</h2>
+    <div className=" productSection">
+      {/* <h2>Our Products:</h2> */}
       {state.products.length ? (
-        <div className="flex-row">
+        <div className="row">
           {filterProducts().map((product) => (
-            <ProductItem
+            <ProductItem class='productLinkText'
               key={product._id}
               _id={product._id}
               image={product.image}

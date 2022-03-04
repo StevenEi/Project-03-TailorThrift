@@ -4,6 +4,7 @@ import { pluralize } from "../../utils/helpers";
 import { useStoreContext } from "../../utils/GlobalState";
 import { ADD_TO_CART, UPDATE_CART_QUANTITY } from "../../utils/actions";
 import { idbPromise } from "../../utils/helpers";
+import './style.css';
 
 function ProductItem(item) {
   const [state, dispatch] = useStoreContext();
@@ -17,7 +18,6 @@ function ProductItem(item) {
     quantity,
     size
   } = item;
-
   const { cart } = state
 
   const addToCart = () => {
@@ -42,21 +42,25 @@ function ProductItem(item) {
   }
 
   return (
-    <div className="card px-1 py-1">
-      <Link to={`/products/${_id}`}>
-        <img
-          alt={name}
-          src={process.env.PUBLIC_URL + image}
-        />
-        <p>{name}</p>
-      </Link>
-      <div>
-        <div>{quantity} {pluralize("item", quantity)} in stock</div>
-        <p>{size}</p>
-        <p>{description}</p>
-        <span>${price}</span>
+    <div class='col columnStyle'>
+      <div className="productCard">
+        <Link class='productTitle' to={`/products/${_id}`}>
+          <img class='productImgCard'
+            alt={name}
+            src={image}
+          />
+        </Link>
+        <div class="productDesc">
+          <div className="itemTitle">{name} ${price}</div>
+          {/* <div className="productDesc"> */}
+          <div class='productText topText'>sz. {size}</div>
+          <div class='productText descQuant'>{description}</div>
+          <div class='productText descQuant'>{quantity} {pluralize("item", quantity)} in stock</div>
+
+          {/* </div> */}
+        </div>
+        {/* <button class='addCartButton' onClick={addToCart}>Add to cart</button> */}
       </div>
-      <button onClick={addToCart}>Add to cart</button>
     </div>
   );
 }

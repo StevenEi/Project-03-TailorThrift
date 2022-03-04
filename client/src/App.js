@@ -6,6 +6,8 @@ import Header from "./components/Header"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Success from './pages/Success';
+import Aboutus from './pages/About';
+import Howitworks from "./pages/Howitworks";
 import Cart from "./components/Cart";
 import OrderHistory from './pages/OrderHistory';
 import Detail from "./pages/Detail";
@@ -50,18 +52,31 @@ function App() {
           <BrowserRouter>
             <Header />
             <nav class='header navbar navbar-expand-lg '>
-            <a class="navbar-brand" href="#">
-              <img src={Logo} alt='Logo' class='logo ' />
-            </a>
+              <Link  to="/" class=" appLink navbar-brand mx-auto" href="#">
+                <img src={Logo} alt='Logo' class='logo ' />
+              </Link>
               <div class="collapse navbar-collapse headerIcons" id="navbarSupportedContent">
+
                 <ul class="navbar-nav headerIcons">
                   <li class="nav-item">
                     <Link to="/login" class='appLink'>
-                      <img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon'/></Link>
+                      <img src={LoggedOut} alt='loggedOutIcon' class='loggedOutIcon' /></Link>
                   </li>
                   <li class='cartHeaderIcon'> <Cart /></li>
                 </ul>
               </div>
+              <ul class="navbar-nav headerTextLinks">
+                  <li class="nav-item headerTextItem mx-2">
+                  <Link to="/howitworks" class='appLink LinkText '>How It Works</Link>
+                  </li>
+                  <li class="nav-item headerTextItem mx-2">
+                  <Link to="/products" class='appLink LinkText '>Products</Link>
+                  </li>
+                  <li class="nav-item headerTextItem mx-2">
+                  <Link to="/aboutus" class='appLink LinkText '>About Us</Link> 
+                  </li>
+
+                </ul>
             </nav>
             <Routes>
               <Route path="/" element={<Home />} />
@@ -72,6 +87,8 @@ function App() {
               <Route exact path="/orderHistory" element={<OrderHistory />} />
               <Route exact path="/products/:id" element={<Detail />} />
               <Route exact path="/reviews" element={<Reviews />} />
+              <Route exact path='/howitworks' element={<Howitworks/>} />
+              <Route exact path="/aboutus" element={<Aboutus/>} />
             </Routes>
             <Footer />
           </BrowserRouter>

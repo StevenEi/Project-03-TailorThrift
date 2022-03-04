@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { Link, useParams } from 'react-router-dom';
 import { useQuery } from '@apollo/client';
-
+import '../assets/css/Detail.css'
 import Cart from '../components/Cart';
 import { useStoreContext } from '../utils/GlobalState';
 import {
@@ -13,6 +13,7 @@ import {
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
+import SingleProductBanner from '../assets/SingleProductBanner.png'
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
@@ -84,28 +85,45 @@ function Detail() {
   return (
     <>
       {currentProduct && cart ? (
-        <div className="container my-1">
-          <Link to="/products">← Back to Products</Link>
+        <div class=''>
+          <div class=''>
+            <img src={SingleProductBanner} alt='' class='singleProductBanner' />
+          </div>
+          <div className="singleProductContainer my-1 row">
 
-          <h2>{currentProduct.name}</h2>
+            <div class='singleProduct col' >
+              <img class='singleProduct'
+                src={`../${currentProduct.image}`}
+                alt={currentProduct.name}
+              />
+            </div>
+            <div class='col'>
+              <p class='singleProductTitle'>{currentProduct.name}</p>
 
-          <p>{currentProduct.description}</p>
+              <p class='singleProductText'>{currentProduct.description}</p>
 
-          <p>
-            <strong>Price:</strong>${currentProduct.price}{' '}
-            <button onClick={addToCart}>Add to Cart</button>
-            <button
-              disabled={!cart.find((p) => p._id === currentProduct._id)}
-              onClick={removeFromCart}
-            >
-              Remove from Cart
-            </button>
-          </p>
+              <p>
+                <p class='singleProductText'>Price: ${currentProduct.price}{' '}</p>
+                <div>
+                 <button class='singleProductBtn' onClick={addToCart}>Add to Cart</button> 
+                </div>
+                <div>
+                   <button class='singleProductBtn'
+                  disabled={!cart.find((p) => p._id === currentProduct._id)}
+                  onClick={removeFromCart}
+                >
+                  Remove from Cart
+                </button>
+                </div>
+               
+              </p>
 
-          <img
-            src={`/images/${currentProduct.image}`}
+              {/* <img
+            src={`../${currentProduct.image}`}
             alt={currentProduct.name}
-          />
+          /> */}
+            </div>
+          </div>
         </div>
       ) : null}
       {loading ? <img src={spinner} alt="loading" /> : null}

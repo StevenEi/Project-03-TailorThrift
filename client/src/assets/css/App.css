@@ -4,17 +4,15 @@
 }
 
 .logo {
-    height: 30px;
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    /* position:absolute; */
-    
+    height: 35px;
 }
 
 .header{
     background-color: white;
     color: var(--darkblue);
+    text-decoration: none;
+    padding:0px !important;
+    
 
 
 }
@@ -24,13 +22,25 @@
     right: 1%;
 }
 
+.headerTextLinks{
+position:absolute;
+}
+
+.headerTextItem{
+    font-size: 14px;
+}
+
+.LinkText{
+    text-decoration: none;
+}
+
 .appLink{
     color: var(--dark-grey)
 
 }
 
 .loggedOutIcon{
-    height: 40px;
+    height: 35px;
 }
 
 
