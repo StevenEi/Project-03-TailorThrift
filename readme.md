@@ -2,6 +2,13 @@
 
 ## Project Description 
  
+## Visuals of Finished Product
+
+![Project Demo](TT1.gif)
+![Project Demo](TT2.gif)
+![Project Demo](TT3.gif)
+![Project Demo](TT4.gif)
+![Project Demo](TT5.gif)
 
 # Table of Contents 
 1. [Installation Information](#installation-information)
