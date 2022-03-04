@@ -49,13 +49,13 @@ const Home = () => {
       <div class=' row'>
         <div class='CategorySection col'>
           <button  class='CategoryLink  ' onClick={() => {
-            handleClick('621e6c37003b7d73144660f7')
+            handleClick('6221a2e42136b90022d83a75')
           }}>Shop Shirts</button>
           <button class='CategoryLink  ' onClick={() => {
-            handleClick('621e6c37003b7d73144660f8')
+            handleClick('6221a2e42136b90022d83a77')
           }}>Shop Slacks</button>
           <button class='CategoryLink  ' onClick={() => {
-            handleClick('621e6c37003b7d73144660fb')
+            handleClick('6221a2e42136b90022d83a7b')
           }}>Shop Accessories</button>
         </div>
       </div>
