@@ -48,6 +48,13 @@ const Home = () => {
         <div class='featureCard col feature4'><FeatureCards />
           <img src={Feature4} alt='' class='feature' /></div>
       </div >
+      <div class='statementSection'>
+          <p class='statementTitle'>A <i>SMALL</i> ALTERATION CAN CHANGE THE WORLD</p>
+          <p class='statementText'>
+          Tailor/Thrift exists to provide a low cost option to form fitting ware. We aim to help our customers find purpose in the repurposed. We do this by providing selections of quality inspected previously-owned clothing combined with our alteration services to get the right fit. With our eco-friendly up cycling model through, our customers not only feel confident in their clothes but in where they bought it as well. 
+          </p>
+        </div>
+
       <div class=' row'>
         <div class='CategorySection col'>
           <button  class='CategoryLink  ' onClick={() => {

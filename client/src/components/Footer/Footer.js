@@ -7,12 +7,7 @@ import './style.css'
 const Footer = () => {
   return (
     <div class='footerSection'>
-              <div class='statementSection'>
-          <h4>A SMALL ALTERATION CAN CHANGE THE WORLD</h4>
-          <p class='statementText'>
-          Tailor/Thrift exists to provide a low cost option to form fitting ware. We aim to help our customers find purpose in the repurposed. We do this by providing selections of quality inspected previously-owned clothing combined with our alteration services to get the right fit. With our eco-friendly up cycling model through, our customers not only feel confident in their clothes but in where they bought it as well. 
-          </p>
-        </div>
+
       <div className='row'>
 
 
