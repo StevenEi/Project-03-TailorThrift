@@ -8,7 +8,8 @@ import Signup from "./pages/Signup"
 import Success from './pages/Success';
 import Cart from "./components/Cart";
 import OrderHistory from './pages/OrderHistory';
-import Detail from "./pages/Detail"
+import Detail from "./pages/Detail";
+import Reviews from "./pages/Reviews"
 import { BrowserRouter, Link, Routes, Route } from "react-router-dom"
 import { StoreProvider } from './utils/GlobalState';
 import {
@@ -70,6 +71,7 @@ function App() {
               <Route exact path="/success" element={<Success />} />
               <Route exact path="/orderHistory" element={<OrderHistory />} />
               <Route exact path="/products/:id" element={<Detail />} />
+              <Route exact path="/reviews" element={<Reviews />} />
             </Routes>
             <Footer />
           </BrowserRouter>
