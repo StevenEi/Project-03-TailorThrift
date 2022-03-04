@@ -4,6 +4,14 @@
 TailorThrift is an online clothing shopping platform aimed at delivering customers well-fitting tailored outfits at a fair price. Tailorthrift lives by the ABC motto (Affordable Bespoke Clothing) because everybody deserves to look their best. Additional information can be found on the
 
 TailorThrift is a full stack MERN application where users can search different clothing options, add them to their carts, add credit card information and "purchase" those items (no actual items will be sent to the user... yet). Addit
+ 
+## Visuals of Finished Product
+
+![Project Demo](TT1.gif)
+![Project Demo](TT2.gif)
+![Project Demo](TT3.gif)
+![Project Demo](TT4.gif)
+![Project Demo](TT5.gif)
 
 # Table of Contents 
 1. [Installation Information](#installation-information)
