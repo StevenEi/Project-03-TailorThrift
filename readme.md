@@ -1,7 +1,9 @@
 # Project 03 - TailorThrift
 
 ## Project Description 
- 
+TailorThrift is an online clothing shopping platform aimed at delivering customers well-fitting tailored outfits at a fair price. Tailorthrift lives by the ABC motto (Affordable Bespoke Clothing) because everybody deserves to look their best. Additional information can be found on the
+
+TailorThrift is a full stack MERN application where users can search different clothing options, add them to their carts, add credit card information and "purchase" those items (no actual items will be sent to the user... yet). Addit
 
 # Table of Contents 
 1. [Installation Information](#installation-information)
@@ -12,9 +14,7 @@
 6. [Licensing](#licensing)
 
 ## Installation Information
-Install the npm registry using "npm install" in the console and then install any desired packages by typing "[package name] install". This project utilizes a variety of npm packages which will need to be installed prior to use, type "npm i" in the appropriate folder location to install them.
-
-No additional installation information is necessary.
+Install the NPM registry using the "npm run install" script in the console. This project uses a variety of NPM packages such as stripe, bootstrap, nodemailer and JWT. Please see the package.json files for exhaustive lists.
 
 ## Usage 
 This application is a text editor that runs in the browser. The project utilizes code techniques to display data persistence as it will function offline.
