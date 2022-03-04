@@ -60,11 +60,12 @@ const Home = () => {
         </div>
       </div>
       <div class='MeasurementSection row'>
-        <div class='col measure1 measure'> 
+        <div class='col measure2 measure'> 
         <CarouselTest/>
         </div>
-        <div class='col measure2 measure'> 
+        <div class='col measure1 measure'> 
         <img src={Measure} alt="" class='measurePhoto'/></div>
+        <p className='measureTitle'>How to self measure</p>
       </div>
     </div>
   );

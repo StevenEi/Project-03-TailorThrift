@@ -13,7 +13,7 @@ import {
 import { QUERY_PRODUCTS } from '../utils/queries';
 import { idbPromise } from '../utils/helpers';
 import spinner from '../assets/spinner.gif';
-import SingleProductBanner from '../assets/SingleProductBanner.png'
+import SingleProductBanner from '../assets/productBanner.png'
 
 function Detail() {
   const [state, dispatch] = useStoreContext();
