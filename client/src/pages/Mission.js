@@ -1,5 +1,4 @@
 import React from 'react'
-import MissionBanner from '../assets/SingleProductBanner.png'
 import '../assets/css/Howitworks.css'
 import Story1 from '../assets/story1.png'
 import Story2 from '../assets/story2.png'
@@ -8,14 +7,28 @@ import Story3 from '../assets/story3.png'
 const Howitworks = () => {
   return (
     <div class='missionPage'>
-      <div class='missionTitle'>OUR STORY</div>
+            <div class='missionTitleUnder'>FIND PURPOSE IN THE REPURPOSED</div>
+        <div class='storyMission'>
+          <div class='col'>
+            <p class='MissionText' > </p>
+        </div>
+      </div>
+
+      <div class='missionTitle'>FIND PURPOSE IN THE REPURPOSED</div>
+        <div class='storyMission'>
+          <div class='col'>
+            <p class='MissionText' > </p>
+        </div>  
+      </div>
+
+
       <div className='story1'>
         <div class='story1section row'>
           <div class='col'>
             <p class='storyText' >Fashion can be daunting when we’re trying to find/redefine our own sense of style. We at TAILOR/THRIFT aim to assist our customers in their style journey with our ABC (Affordable Bespoke Clothing) approach.  </p>
           </div>
           <div class='col '>
-            <img src={Story2} alt='' className='storyPhoto' />
+            <img src={Story2} alt='' className='storyPhoto data-aos="zoom-out"' />
           </div>
         </div>
       </div>
@@ -39,6 +52,7 @@ const Howitworks = () => {
           </div>
         </div>
       </div>
+      
     </div>
 
   )
