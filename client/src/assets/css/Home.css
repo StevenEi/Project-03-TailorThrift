@@ -11,6 +11,7 @@
     margin-left: auto;
     margin-right: auto;
     z-index: 800;
+    margin-top: 0px;
     /* position:fixed; */
 }
 
@@ -82,13 +83,19 @@ width: 210px;
 }
 
 .measure{
-    background-color: #212529 ;
+    background-color: #154c79 ;
     height: 500px;
 }
 
+
+.measure1{
+    padding: 0px !important;
+}
 .measure2{
     padding: 0px !important;
 }
+
+
 
 .measurePhoto{
     max-width: 500px;

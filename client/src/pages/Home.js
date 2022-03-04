@@ -6,7 +6,7 @@ import Feature1 from '../assets/Feature1.png'
 import Feature2 from '../assets/Feature2.png'
 import Feature3 from '../assets/Feature3.png'
 import Feature4 from '../assets/Feature4.png'
-// import Measure from '../assets/measurePhoto.png'
+import Measure from '../assets/measurePhoto.png'
 import { useStoreContext } from '../utils/GlobalState';
 import {
   UPDATE_CURRENT_CATEGORY,
@@ -63,8 +63,8 @@ const Home = () => {
         <div class='col measure1 measure'> 
         <CarouselTest/>
         </div>
-        {/* <div class='col measure2 measure'> 
-        <img src={Measure} alt="" class='measurePhoto'/></div> */}
+        <div class='col measure2 measure'> 
+        <img src={Measure} alt="" class='measurePhoto'/></div>
       </div>
     </div>
   );
