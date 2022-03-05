@@ -1,5 +1,5 @@
 import Home from "./pages/Home"
-import Footer from "./components/Footer"
+import Footer from "./components/Footer/Footer.js"
 import Products from "./pages/Products"
 import Header from "./components/Header"
 // import Carousel from "./components/Carousel/Carousel.js"
@@ -92,7 +92,7 @@ function App() {
               <Route exact path="/reviews" element={<Reviews />} />
               <Route exact path="/aboutus" element={<Aboutus/>} />
             </Routes>
-            <Footer />
+            <Footer/>
           </BrowserRouter>
         </StoreProvider>
       </div>

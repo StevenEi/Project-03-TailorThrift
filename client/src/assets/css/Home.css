@@ -68,8 +68,8 @@ width: 210px;
     border:none;
     margin-left:80PX !important;
     margin-right: 80px !important;
-    font-weight: bold;
-    font-size: 17px;
+    /* font-weight: ; */
+    font-size: 20px;
 }
 
 .MeasurementSection{
