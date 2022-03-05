@@ -1,13 +1,12 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
-import { useMutation } from '@apollo/client';
-import Auth from '../utils/auth';
-import { ADD_USER } from '../utils/mutations';
-import '../assets/css/LoginSignUp.css'
-
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { useMutation } from "@apollo/client";
+import Auth from "../utils/auth";
+import { ADD_USER } from "../utils/mutations";
+import "../assets/css/LoginSignUp.css";
 
 function Signup(props) {
-  const [formState, setFormState] = useState({ email: '', password: '' });
+  const [formState, setFormState] = useState({ email: "", password: "" });
   const [addUser] = useMutation(ADD_USER);
 
   const handleFormSubmit = async (event) => {
@@ -26,6 +25,24 @@ function Signup(props) {
     });
     const token = mutationResponse.data.addUser.token;
     Auth.login(token);
+
+    const submitEmail = await fetch("http://localhost:3001/send", {
+      method: "POST",
+      headers: {
+        "Content-type": "application/json",
+      },
+      body: JSON.stringify({ formState }),
+    })
+      .then((res) => res.json())
+      .then(async (res) => {
+        const resData = await res;
+        console.log(resData);
+        if (resData.status === "success") {
+          alert("Message Sent");
+        } else if (resData.status === "fail") {
+          alert("Message failed to send");
+        }
+      });
   };
 
   const handleChange = (event) => {
@@ -38,16 +55,15 @@ function Signup(props) {
 
   return (
     <div className="container my-1">
-
-      <div class='loginCard'>
-        <h2 class='loginTitle'>New Users</h2>
+      <div class="loginCard">
+        <h2 class="loginTitle">New Users</h2>
       </div>
 
       <form onSubmit={handleFormSubmit}>
         <div className="flex-row space-between my-2 fields">
           <label htmlFor="firstName"></label>
           <input
-            className='loginField'
+            className="loginField"
             placeholder="First Name"
             name="firstName"
             type="firstName"
@@ -58,7 +74,7 @@ function Signup(props) {
         <div className="flex-row space-between my-2 fields">
           <label htmlFor="lastName"></label>
           <input
-            className='loginField'
+            className="loginField"
             placeholder="Last Name"
             name="lastName"
             type="lastName"
@@ -69,7 +85,7 @@ function Signup(props) {
         <div className="flex-row space-between my-2 fields">
           <label htmlFor="email"></label>
           <input
-            className='loginField'
+            className="loginField"
             placeholder="email@domain.com"
             name="email"
             type="email"
@@ -80,25 +96,28 @@ function Signup(props) {
         <div className="flex-row space-between my-2 fields">
           <label htmlFor="pwd"></label>
           <input
-            className='loginField'
+            className="loginField"
             placeholder="******"
             name="password"
             type="password"
             id="pwd"
             onChange={handleChange}
           />
+
                     <div >
             <p class='measureTitleLogin'>New User Measurements</p>
+
+          <div>
           </div>
         </div>
 
-        <div class='measureCard'>
-
-
+        <div class="measureCard">
           <div className="measureFields">
-            <label class='measureTitleText' htmlFor="chest">Chest </label>
+            <label class="measureTitleText" htmlFor="chest">
+              Chest{" "}
+            </label>
             <input
-              className='measureField'
+              className="measureField"
               placeholder="  e.g.42in"
               name="chest"
               type="chest"
@@ -107,9 +126,11 @@ function Signup(props) {
             />
           </div>
           <div className="measureFields">
-            <label class='measureTitleText' htmlFor="pwd">Arms</label>
+            <label class="measureTitleText" htmlFor="pwd">
+              Arms
+            </label>
             <input
-              className='measureField'
+              className="measureField"
               placeholder="e.g. 42in"
               name="arms"
               type="arms"
@@ -118,9 +139,11 @@ function Signup(props) {
             />
           </div>
           <div className="measureFields">
-            <label class='measureTitleText' htmlFor="waist">Waist</label>
+            <label class="measureTitleText" htmlFor="waist">
+              Waist
+            </label>
             <input
-              className='measureField'
+              className="measureField"
               placeholder="e.g. 32in"
               name="waist"
               type="waist"
@@ -129,9 +152,11 @@ function Signup(props) {
             />
           </div>
           <div className="measureFields">
-            <label class='measureTitleText' htmlFor="legs">Inseam</label>
+            <label class="measureTitleText" htmlFor="legs">
+              Inseam
+            </label>
             <input
-              className='measureField'
+              className="measureField"
               placeholder="e.g. 32in"
               name="inseam"
               type="inseam"
@@ -142,15 +167,17 @@ function Signup(props) {
         </div>
 
         <div className="flex-end loginButton">
-          <button type="submit" class='loginBtn'>Sign Up</button>
+          <button type="submit" class="loginBtn">
+            Sign Up
+          </button>
         </div>
       </form>
       <div>
-      <div class='signUpRedirect'>Already a member?</div>
-      <Link to="/login" class='goToLogin'>← Go to Login</Link>
+        <div class="signUpRedirect">Already a member?</div>
+        <Link to="/login" class="goToLogin">
+          ← Go to Login
+        </Link>
       </div>
-
-
     </div>
   );
 }
