@@ -7,13 +7,13 @@ import '../assets/css/Product.css'
 
 export default function Products(){
     return (
-        <div>
+        <div className="productsPage">
             <div>
             <img src={ProductBanner} alt='' className="productBanner"/>    
             </div>    
             <CategoryMenu />
             <ProductList />
-            <Cart />
+            {/* <Cart /> */}
         </div>
     )
 }

@@ -6,7 +6,7 @@ import Header from "./components/Header"
 import Login from "./pages/Login"
 import Signup from "./pages/Signup"
 import Success from './pages/Success';
-import Aboutus from './pages/About';
+import OurTeam from './pages/OurTeam';
 import Mission from "./pages/Mission";
 import Cart from "./components/Cart";
 import OrderHistory from './pages/OrderHistory';
@@ -74,9 +74,9 @@ function App() {
                   <li class="nav-item headerTextItem mx-2">
                   <Link to="/products" class='appLink LinkText '>Products</Link>
                   </li>
-                  <li class="nav-item headerTextItem mx-2">
+                  {/* <li class="nav-item headerTextItem mx-2">
                   <Link to="/aboutus" class='appLink LinkText '>About Us</Link> 
-                  </li>
+                  </li> */}
 
                 </ul>
             </nav>
@@ -90,7 +90,7 @@ function App() {
               <Route exact path="/products/:id" element={<Detail />} />
               <Route exact path='/mission' element={<Mission/>} />
               <Route exact path="/reviews" element={<Reviews />} />
-              <Route exact path="/aboutus" element={<Aboutus/>} />
+              <Route exact path="/ourteam" element={<OurTeam/>} />
             </Routes>
             <Footer/>
           </BrowserRouter>

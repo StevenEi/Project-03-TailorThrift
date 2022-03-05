@@ -21,35 +21,37 @@ const Posts = () => {
     },
     {
       title: "Super Secure",
-      body: `I sleep well at night knowing my information is safe with the Tailor Swift Team and their secure database.`, 
+      body: `I sleep well at night knowing my information is safe with the Tailor Thrift Team and their secure database.`,
       author: "Bill Gates",
     },
   ];
-  
-  return (
-    <div className="posts-container">
-      {blogPosts.map((post, index) => (
-        <div key={index} index={index}>
-          <h1>Title: {post.title}</h1>
-          <h3>Comment: {post.body}</h3>
-          <h3>Author: {post.author}</h3>
 
+  return (
+    <div className="postsContainer row " >
+      {blogPosts.map((post, index) => (
+        <div className=" postCard col">
+          <div class='' key={index} index={index}>
+            <p class='postTitle'>{post.title}</p>
+            <p class='postText'>{post.body}</p>
+            <p class='postAuthor'>-{post.author}</p>
           </div>
+        </div>
+
       ))}
     </div>
   );
 };
-  
+
 // export default Posts;
 //     <div className="post-container">
 //       <h1 className="heading">{title}</h1>
 //       {/* <img className="image" src={imgUrl} alt="post" /> */}
 //       <p>{body}</p>
-//       <div className="info">      
+//       <div className="info">
 //         <h4>Written by: {author}</h4>
 //       </div>
 //     </div>
 //   )
 // };
-  
+
 export default Posts;

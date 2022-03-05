@@ -1,8 +1,39 @@
 body {
     background-color: #acd6c2;
 }
-.posts-container {
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.postsContainer {
+    display: flex !important;
+    /* justify-content: center;
+    align-items: center; */
+    margin-left: auto !important;
+    margin-right:auto !important;
+    width:500px;
+}
+
+.postCard{
+    margin:0 20px 0px 20px;
+    background-color: #f2f2f2;
+    height: 250px;
+    width:250px !important;
+    padding-left: 0px;
+    margin-top:20px !important;
+}
+
+.postTitle{
+    text-align: center;
+    padding-top: 40px;
+}
+
+.postText{
+    font-size: 14px;
+    width: 170px;
+    text-align: justify ;
+    display: block;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.postAuthor{
+    text-align: end;
+    margin-right: 30px;
 }
