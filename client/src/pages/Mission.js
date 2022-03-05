@@ -35,7 +35,7 @@ const Howitworks = () => {
       <div className='story1'>
         <div class='story1section row'>
           <div class='col '>
-            <img src={Story1} alt='' className='storyPhoto' />
+            <img src={Story1} alt='' className='storyPhoto storyphoto1' />
           </div>
           <div class='col'>
             <p class='storyText' >The feeling of a perfect fitting shirt helps bring a sense of confidence and assurance to wherever you go, but typically with perfect fitting shirt comes a hefty price tag. This shouldn't be the case.  </p>

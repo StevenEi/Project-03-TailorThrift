@@ -107,7 +107,6 @@ function Signup(props) {
                     <div >
             <p class='measureTitleLogin'>New User Measurements</p>
 
-          <div>
           </div>
         </div>
 

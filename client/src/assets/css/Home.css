@@ -9,6 +9,7 @@
     display: block;
     margin-left: auto;
     margin-right: auto;
+    /* margin-top: 200px; */
     z-index: 800;
     margin-top: 0px;
     /* position:fixed; */
@@ -49,7 +50,7 @@
     position: absolute;
     top: 50%;
     left: 50%;
-    margin-top: -200px;
+    margin-top: -50px;
     transform: translate(-50%, -50%);
     max-width: 310px;
     margin-left: -270px;
@@ -172,13 +173,13 @@
     }
 
     .bannerText {
-        font-size: 40px;
+        font-size: 30px;
         max-width: 400px;
         position: absolute;
-        top: 50%;
-        margin-left: 20px;
+        margin-left: auto;
         line-height: 50px;
         text-align: center;
+        margin-top:-210px;
     }
 
     .feature {
@@ -201,14 +202,24 @@
         width: 800px;
     }
 
+    .CategorySection{
+        max-width: 400px !important;
+    }
+
+    .shopSection{
+        width: 400px;
+    }
+
     .CategoryLink {
         background-color: white;
         border: none;
-        margin-left: 80PX !important;
-        margin-right: 80px !important;
+        /* margin-left: 80PX !important;
+        margin-right: 80px !important; */
         /* font-weight: ; */
         font-size: 20px;
-        width: 400px
+        width: 400px;
+        margin-left:auto !important;
+        margin-right:auto !important;
     }
 
 }
