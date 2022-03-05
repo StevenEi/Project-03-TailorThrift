@@ -22,12 +22,41 @@
 
 }
 
+
+
 .statementTitle{
     font-size: 35px;
 }
 
 .listContainer{
     margin-bottom: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    
+}
+
+.listContainer li a{
+    text-decoration: none;
+    color:   rgb(95, 95, 95);
+}
+
+.contactSection{
+    margin:20px;
+}
+
+.contactTeam{
+    font-size: 12px;
+}
+
+.contactTitle1{
+    margin-bottom: 0px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.contactTitle2{
+    margin-bottom: 0px;
+    font-size: 12px;
 }
 
 .statementText{
