@@ -49,17 +49,23 @@ const Home = () => {
           <img src={Feature4} alt='' class='feature' /></div>
       </div >
 
-      <div class='shopSection row'>
-        <div class='CategorySection col'>
-          <button class='CategoryLink  ' onClick={() => {
-            handleClick('6221a2e42136b90022d83a75')
-          }}>Shop Shirts</button>
-          <button class='CategoryLink  ' onClick={() => {
-            handleClick('6221a2e42136b90022d83a77')
-          }}>Shop Slacks</button>
-          <button class='CategoryLink  ' onClick={() => {
-            handleClick('6221a2e42136b90022d83a7b')
-          }}>Shop Accessories</button>
+      <div class='shopSection'>
+        <div class='CategorySection row'>
+          <div class='categoryBtn col'>
+            <button class='CategoryLink  ' onClick={() => {
+              handleClick('6221a2e42136b90022d83a75')
+            }}>Shop Shirts</button>
+          </div>
+          <div class='categoryBtn col'>
+            <button class='CategoryLink  ' onClick={() => {
+              handleClick('6221a2e42136b90022d83a77')
+            }}>Shop Slacks</button>
+          </div>
+          <div class='categoryBtn col'>
+            <button class='CategoryLink  ' onClick={() => {
+              handleClick('6221a2e42136b90022d83a7b')
+            }}>Shop Accessories</button>
+          </div>
         </div>
       </div>
 
