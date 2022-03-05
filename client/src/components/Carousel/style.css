@@ -1,9 +1,11 @@
 .carousel{
     background-color: rgb(21,76,121); 
+
 }
 
 .carSlide{
     max-height: 500px;
+    min-width: 500px;
 }
 
 .carSlideText{
@@ -38,4 +40,12 @@
 .slideText{
     font-family: 'Cormorant Garamond', serif;
     font-size: 20px;
+}
+
+@media screen and (max-width: 799px) {
+    .carSlide{
+        min-height: 400px;
+    }
+
+
 }

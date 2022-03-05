@@ -1,5 +1,4 @@
-
-.logoContainer{
+.logoContainer {
     text-align-last: center;
 }
 
@@ -15,90 +14,201 @@
     /* position:fixed; */
 }
 
-.bannerText{
+.statementSection {
+    text-align: center;
+    width: 700px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+    margin-top: 100px;
+    background-color: #f2f2f2;
+    padding: 50px 100px 50px 100px;
+    color: rgb(95, 95, 95);
+    font-family: 'Cormorant Garamond', serif;
+    font-weight: 600;
+
+}
+
+.statementText {
+    font-size: 16px;
+}
+
+.statementTitle {
+    font-size: 35px;
+}
+
+
+
+.bannerText {
     font-family: 'Cormorant Garamond', serif;
     font-weight: lighter;
     line-height: 80px;
     font-size: 80px;
-    color:white;
+    color: white;
     position: absolute;
-    left:0%;
-    max-width: 320px;
-    margin-left: 15%;
-    margin-top: -400px;
+    top: 50%;
+    left: 50%;
+    margin-top: -200px;
+    transform: translate(-50%, -50%);
+    max-width: 310px;
+    margin-left: -270px;
     text-align: left;
     z-index: 900;
 }
 
-.featureSection{
+.featureSection {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1000px;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-top:80px !important;
+    margin-top: 80px !important;
 }
 
-.featureTitle{
+.featureTitle {
     font-size: 25px;
-    margin:0px
+    margin: 0px
 }
 
-.feature{
-max-height: 300px;
-width: 210px;
+.feature {
+    max-height: 300px;
+    max-width: 210px;
 }
 
+/* .shopSection {
+    margin-bottom: 100px;
+    width: 800px;
+    margin-left:auto !important;
+    margin-right:auto !important;
+    display: block;
+} */
 
 
-.CategorySection{
+.CategorySection {
     display: flex;
     text-align: center;
     justify-content: center;
     max-width: 1000px !important;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-top:80px !important;
+    margin-top: 80px !important;
+    background-color:#f2f2f2;
 }
 
 
-.CategoryLink{
+.CategoryLink {
     background-color: white;
-    border:none;
-    margin-left:80PX !important;
+    border: none;
+    margin-left: 80PX !important;
     margin-right: 80px !important;
     /* font-weight: ; */
     font-size: 20px;
+    padding: 60px 0 60px 0;
+    background-color:#f2f2f2;
+    
 }
 
-.MeasurementSection{
+.MeasurementSection {
     display: flex;
     align-items: center;
     justify-content: center;
     max-width: 1000px;
     margin-left: auto !important;
     margin-right: auto !important;
-    margin-top:80px !important;
+    margin-top: 80px !important;
+    margin-bottom: 50px;
 }
 
-.measure{
-    background-color: #154c79 ;
+.measure {
+    /* background-color: #154c79 ; */
     height: 500px;
 }
 
 
-.measure1{
+.measure1 {
     padding: 0px !important;
+
+    position: relative;
+    text-align: center;
+    color: white;
 }
-.measure2{
+
+.measure2 {
     padding: 0px !important;
+    min-width: 400px;
+}
+
+.measureTitle {
+    position: absolute;
+    color: white;
+    font-family: 'Cormorant Garamond', serif;
+    font-size: 90px !important;
+    width: 350px !important;
+    margin-right: 520px;
+    line-height: 110px;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-weight: 500;
 }
 
 
-
-.measurePhoto{
+.measurePhoto {
     max-width: 500px;
-    filter:grayscale(90)
+    filter: grayscale(90)
+}
+
+@media screen and (max-width: 790px) {
+    .statementSection {
+        max-width: 400px;
+    }
+
+    .measurePhoto {
+        max-width: 400px;
+    }
+
+    .bannerText {
+        font-size: 40px;
+        max-width: 400px;
+        position: absolute;
+        top: 50%;
+        margin-left: 20px;
+        line-height: 50px;
+        text-align: center;
+    }
+
+    .feature {
+        max-height: 150px !important;
+        max-width: 200px !important;
+        margin: 0px;
+        padding: 0px;
+    }
+
+    .featureCard {
+        padding: 0px !important;
+        margin: 0px !important;
+    }
+
+    .CategorySection {
+        max-width: 400px;
+    }
+
+    .shopSection {
+        width: 800px;
+    }
+
+    .CategoryLink {
+        background-color: white;
+        border: none;
+        margin-left: 80PX !important;
+        margin-right: 80px !important;
+        /* font-weight: ; */
+        font-size: 20px;
+        width: 400px
+    }
 
 }

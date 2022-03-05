@@ -88,7 +88,7 @@ function Signup(props) {
             onChange={handleChange}
           />
                     <div >
-            <p class='measureTitle'>New User Measurements</p>
+            <p class='measureTitleLogin'>New User Measurements</p>
           </div>
         </div>
 

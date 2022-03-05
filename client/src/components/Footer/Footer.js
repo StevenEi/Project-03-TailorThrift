@@ -1,10 +1,7 @@
 import React from 'react'
 import { Link } from "react-router-dom";
 import './style.css'
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-
-
-// import Posts from '../components/Posts/Posts.js'
+import Logo from '../../assets/Logo.png'
 
 const Footer = () => {
   return (
@@ -44,12 +41,12 @@ const Footer = () => {
             <li>
               <p class='contactTitle1'>Site Links </p>
             </li>
-
             <li className="mx-1">
-              <Link to="/aboutus">
-                About Us
+              <Link to="/ourteam">
+                Our Team
               </Link>
             </li>
+
             <li className="mx-1">
               <Link to="/mission">
                 Our Mission
@@ -76,22 +73,26 @@ const Footer = () => {
               </Link>
             </li>
 
+
+          </ul>
+
+        </div>
+        <div className='col-sm mediaContainer'>
+        <div>
+            <img src={Logo} alt='' class='footerLogo' />
+          </div>
+          <ul className='listContainer'>
+          <i class="fa fa-facebook-f"></i>
+            <i class="fa fa-twitter"></i>
+            <i class="fa fa-github"></i>
+            <i class="fa fa-instagram"></i>
+            <i class="fa fa-linkedin"></i>
           </ul>
 
         </div>
         <div className='col-sm'>
-          <h5>Tailor Thrift Media</h5>
-          <ul className='listContainer'>
-          <FontAwesomeIcon icon="fa-brands fa-instagram" />
-            <img src="https://img.icons8.com/office/30/000000/facebook.png" alt='' />
-            <img src="https://img.icons8.com/office/30/000000/twitter.png" alt='' />
-            <img src="https://img.icons8.com/office/30/000000/tiktok.png" alt='' />
-            <img src="https://img.icons8.com/office/30/000000/instagram-new.png" alt='' />
-            <img src="https://img.icons8.com/office/30/000000/youtube-play.png" alt='' />
-          </ul>
 
         </div>
-
 
       </div>
     </div>

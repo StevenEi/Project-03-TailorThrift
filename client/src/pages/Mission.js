@@ -1,5 +1,5 @@
 import React from 'react'
-import '../assets/css/Howitworks.css'
+import '../assets/css/Mission.css'
 import Story1 from '../assets/story1.png'
 import Story2 from '../assets/story2.png'
 import Story3 from '../assets/story3.png'
@@ -7,18 +7,18 @@ import Story3 from '../assets/story3.png'
 const Howitworks = () => {
   return (
     <div class='missionPage'>
-            <div class='missionTitleUnder'>FIND PURPOSE IN THE REPURPOSED</div>
-        <div class='storyMission'>
-          <div class='col'>
-            <p class='MissionText' > </p>
+      <div class='missionTitleUnder'>FIND PURPOSE IN THE REPURPOSED</div>
+      <div class='storyMission'>
+        <div class='col'>
+          <p class='MissionText' > </p>
         </div>
       </div>
 
       <div class='missionTitle'>FIND PURPOSE IN THE REPURPOSED</div>
-        <div class='storyMission'>
-          <div class='col'>
-            <p class='MissionText' > </p>
-        </div>  
+      <div class='storyMission'>
+        <div class='col'>
+          <p class='MissionText' > </p>
+        </div>
       </div>
 
 
@@ -52,7 +52,7 @@ const Howitworks = () => {
           </div>
         </div>
       </div>
-      
+
     </div>
 
   )

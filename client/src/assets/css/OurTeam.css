@@ -1,0 +1,45 @@
+.teamTitle{
+    text-align: center;
+    font-size: 50px;
+    width:800px;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom:0px;
+    background-color: #aba304;
+    color: white;
+}
+
+.teamContainer{
+    display: block;
+    margin-left:auto !important;
+    margin-right: auto !important;
+    width:800px;
+    margin: 0px;
+}
+
+.teamCard{
+    width: 400px !important;
+    padding: 0px !important;
+
+}
+
+.teamPic{
+    width:400px;
+}
+
+.teamText{
+min-width: 400px !important;
+min-Height: 400px !important;
+color:#aba304;
+text-align: center;
+padding: 0px !important;
+padding-top: 120px;
+}
+
+.TeamMemberName{
+    font-size: 60px;
+    margin-top: 175px;
+}

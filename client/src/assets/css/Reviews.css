@@ -1,0 +1,43 @@
+.reviewTitle{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    text-align: center;
+    /* background-color: #442139; */
+    background-color: #154c79;
+    padding-top: 115px;
+    padding-bottom: 115px;
+    max-width: 100vw;
+    color: white;
+    clip-path: circle(75%);
+    transition: clip-path 1s;
+    
+  
+}
+
+.reviewTitleUnder{
+    font-size: 50px;
+    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: white;
+    padding-top: 115px;
+    padding-bottom: 115px;
+ 
+    max-width: 100vw;
+    color: #154c79;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  
+}
+  
+  .missionTitle:hover {
+    clip-path: circle(16%);
+    
+  }
